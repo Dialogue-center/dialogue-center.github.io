@@ -1,0 +1,16 @@
+---
+const logos = [
+  { src: "/logos/active_citizen_fund.png", alt: "Active Citizen Fund" },
+  { src: "/logos/agenti-koexistencie.png", alt: "Agenti Koexistencie" },
+  { src: "/logos/europska-komisia.png", alt: "Europska Komisia" },
+  { src: "/logos/oecd.png", alt: "OECD" },
+  { src: "/logos/spolupracovna.jpg", alt: "Spolupracovna" },
+  { src: "/logos/urbact.png", alt: "Urbact" }
+];
+---
+
+<div class="w-full flex justify-center items-center bg-gray-100 py-4">
+  {logos.map((logo) => (
+    <img src={logo.src} alt={logo.alt} class="h-12 mx-4" />
+  ))}
+</div>
