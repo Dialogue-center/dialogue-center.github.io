@@ -1,36 +1,54 @@
 ---
 import Hero from "./Hero.astro";
+
+import InteractiveCarousel from "./ui/interactive-carousel";
 ---
 
-<body class="flex flex-col g-2 items-center">
-    <section class="flex flex-row max-w-1/2">
-        <div>
-            <h1>Poďme o tom hovoriť</h1>
-            <p>Podporme dialóg ktorý vedie k múdrejším a ľudskejším riešeniam a vytvára skutočnú spoluprácu</p>
-            <a href="">Napíšte nám</a>
-        </div>
-        <img src="https://placehold.co/400x200/png" alt="">
-    </section>
-    <div class="divider h-15 bg-gray-300 w-auto"></div>
-    <section class="max-w-1/2">
-        <h2>Naše poslanie</h2>
-        <p>Naším poslaním je rozvíjať kultúru dialógu a vytvárať priestor pre spoluprácu medzi vládami, občanmi a súkromným sektorom. Veríme, že spoločný dialóg a učenie sa od seba navzájom vedie k múdrejším riešeniam a lepším vzťahom.</p>
-        <img src="https://placehold.co/400x200/png" alt="">
-    </section>
-    <div class="divider h-1 bg-gray-300 max-w-4/5"></div>
-    <section class="flex flex-row justify-around
+<div class="flex flex-col gap-10 items-center ">
+  <section class="flex flex-row max-w-1/2 overflow-clip">
+    <div>
+      <h1>Poďme o tom hovoriť</h1>
+      <p>
+        Podporme dialóg ktorý vedie k múdrejším a ľudskejším riešeniam a vytvára
+        skutočnú spoluprácu
+      </p>
+      <a href="">Napíšte nám</a>
+    </div>
+    <img src="" alt="" />
+  </section>
+
+  <div class="divider h-1 bg-gray-300 min-w-4/5"></div>
+
+  <section class="max-w-1/2">
+    <h2>Naše poslanie</h2>
+    <p> 
+      Naším poslaním je rozvíjať kultúru dialógu a vytvárať priestor pre
+      spoluprácu medzi vládami, občanmi a súkromným sektorom. Veríme, že
+      spoločný dialóg a učenie sa od seba navzájom vedie k múdrejším riešeniam a
+      lepším vzťahom.
+    </p>
+    <picture>
+          <img src="https://cdn.razuna.eu/file/remote?i=67addbd69e30880d01803086&f=t&dl=t&type=thumbnail&c=80be322469fa8a39c01caf266071d002&token=98f0ae25ebadeb9bac31047d1c41dc7fb7236adcbcaefac87f84846de91139af" alt="" />
+
+    </picture>
+  </section>
+
+  <div class="divider h-1 bg-gray-300 w-4/5"></div>
+
+  <section class="flex flex-row justify-between
      min-w-1/2">
-        <div class="counter">
-            <var>60+</var>
-            <p>Projects facilitated</p>
-        </div>
-        <div class="counter ">
-            <var>60+</var>
-            <p>Projects facilitated</p>
-        </div>
-        <div class="counter ">
-            <var>60+</var>
-            <p>Projects facilitated</p>
-        </div>
-    </section>
-</body>
+    <div class="counter">
+      <var class="text-6xl">60+</var>
+      <p class="text-1xl">Projects facilitated</p>
+    </div>
+    <div class="counter">
+        <var class="text-6xl">60+</var>
+        <p class="text-1xl">Projects facilitated</p>
+      </div>
+      <div class="counter">
+        <var class="text-6xl">60+</var>
+        <p class="text-1xl">Projects facilitated</p>
+      </div>
+  </section>
+
+</div>
