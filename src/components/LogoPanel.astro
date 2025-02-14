@@ -9,8 +9,8 @@ const logos = [
 ];
 ---
 
-<div class="h-fit flex justify-around items-center  py-4 gap-5 flex-wrap">
+<div class="h-fit flex justify-around items-center  py-4 gap-5 flex-wrap  grayscale-25">
   {logos.map((logo) => (
-    <img src={logo.src} alt={logo.alt} class="h-12" />
+    <img src={logo.src} alt={logo.alt} class="h-24 opacity-40 hover:opacity-100" />
   ))}
 </div>
