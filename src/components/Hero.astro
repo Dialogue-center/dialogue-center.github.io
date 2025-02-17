@@ -4,23 +4,26 @@ const heroImage = "/logos/lightbulb_smoothed.png"; // Ensure correct path
 
 <!-- Hero Section -->
 <section class="w-full flex flex-col lg:flex-row justify-center items-center px-12 py-16 bg-white relative">
-  <!-- Left Content -->
-  <div class="lg:w-1/2 text-center lg:text-left lg:pl-16">
-    <h1 class="text-6xl font-extrabold text-[#102756] font-nunito">
-      POĎME O TOM HOVORIŤ
-    </h1>
-    <p class="text-gray-700 text-[1.5rem] mt-4 font-nunito">
-      Podporme dialóg, ktorý vedie k múdrejším a ľudskejším riešeniam a vytvára 
-      <span class="font-bold italic">skutočnú spoluprácu</span>.
-    </p>
+  
+  <!-- Left Content (Text + Button in a Centered Container) -->
+  <div class="lg:w-1/ flex flex-col justify-center items-center text-center">
+    <div class="w-full max-w-lg flex flex-col items-center text-center">
+      <h1 class="text-8xl font-extrabold text-[#102756] font-nunito" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);">
+        POĎME O TOM HOVORIŤ 
+      </h1>
+      <p class="text-gray-700 text-[1.5rem] mt-4 font-nunito">
+        Podporme dialóg, ktorý vedie k múdrejším a ľudskejším riešeniam a vytvára 
+        <span class="font-bold italic">skutočnú spoluprácu</span>.
+      </p>
 
-    <!-- CTA Button -->
-    <a href="mailto:dialoguecenter@gmail.com" class="mt-10 inline-block bg-[#2878de] text-white text-lg font-medium px-6 py-3 rounded-lg shadow-md hover:bg-[#1f5cab] transition duration-300 font-nunito">
-      Napíšte nám &gt;
-    </a>
+      <!-- CTA Button (Perfectly Centered) -->
+      <a href="mailto:dialoguecenter@gmail.com" class="mt-6 bg-[#2878de] text-white text-lg font-medium px-6 py-3 rounded-lg shadow-md hover:bg-[#1f5cab] transition duration-300 font-nunito">
+        Napíšte nám &gt;
+      </a>
+    </div>
   </div>
 
-  <!-- Right Image -->
+  <!-- Right Image (Separate Container) -->
   <div class="lg:w-1/2 flex justify-center mt-10 lg:mt-0">
     <img src={heroImage} alt="Hero Image" class="max-w-full h-auto">
   </div>
