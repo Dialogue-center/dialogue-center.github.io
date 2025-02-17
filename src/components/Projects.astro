@@ -1,47 +1,154 @@
-<section class="flex flex-col items-center gap-4">
-  <section class="">
-    <header>
-      <h1 class="justify-self-end text-3xl font-semibold mb-4">Rozvoj otvorenej správy</h1>
-    </header>
+---
+import ProjectCategory from "./ProjectCategory.astro";
+import ProjectItem from "./ProjectItem.astro";
+---
 
-    <div
-      class="flex flex-col max-w-4xl p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
-    >
-      <a href="#">
-        <h5
-          class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white"
-        >
-          Agenti koexistencie
-        </h5>
-      </a>
-      <p class="mb-10 font-normal text-gray-700 dark:text-gray-400">
-        Projekt sa zameriava na pravidelnú organizáciu divalógových podujatí,
-        ktorých cieľom je vytvárať priestor pre praktizovanie zručností občanov
-        hosťovať konverzácie v kontexte aktuálnych spoločenských tém, ako aj
-        vyjadrovať a počúvať rozličné názoroy s rešpektom
-      </p>
-      <div class="self-end">
-        <a
-          href="/projects/agents"
-          class="w-fit inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-        >
-          Viac
-          <svg
-            class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 14 10"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M1 5h12m0 0L9 1m4 4L9 9"></path>
-          </svg>
-        </a>
-      </div>
-    </div>
-  </section>
+<section class="flex flex-col items-center gap-4 m-4 md:max-w-4xl mx-auto">
+  <ProjectCategory title="Rozvoj otvorenej správy">
+    <ProjectItem
+      name="Agenti koexistencie"
+      description=`Projekt sa zameriava na pravidelnú organizáciu dialógových podujatí,
+          ktorých cieľom je vytvárať priestor pre praktizovanie zručností občanov,
+          hosťovať konverzácie v kontexte aktuálnych spoločenských tém, ako aj
+          vyjadrovať a počúvať rozličné názor s rešpektom`
+      link="/projects/agents"
+    />
+    <ProjectItem
+      name="Spolupracovňa"
+      description=`Projekt sa zameriava na pravidelnú organizáciu divalógových podujatí,
+          ktorých cieľom je vytvárať priestor pre praktizovanie zručností občanov
+          hosťovať konverzácie v kontexte aktuálnych spoločenských tém, ako aj
+          vyjadrovať a počúvať rozličné názoroy s rešpektom`
+      link="/projects/agents"
+    />
+  </ProjectCategory>
+  <ProjectCategory title="Facilitácia spolutvorby a kolektívnej inteligencie">
+    <ProjectItem
+      name="Revitalizácia mestkého parku"
+      description=`Projekt sa zameriava na pravidelnú organizáciu dialógových podujatí,
+          ktorých cieľom je vytvárať priestor pre praktizovanie zručností občanov,
+          hosťovať konverzácie v kontexte aktuálnych spoločenských tém, ako aj
+          vyjadrovať a počúvať rozličné názor s rešpektom`
+      link="/projects/agents"
+    />
+    <ProjectItem
+      name="Revitalizácia sídliskových priestranstiev"
+      description=`Projekt sa zameriava na pravidelnú organizáciu divalógových podujatí,
+          ktorých cieľom je vytvárať priestor pre praktizovanie zručností občanov
+          hosťovať konverzácie v kontexte aktuálnych spoločenských tém, ako aj
+          vyjadrovať a počúvať rozličné názoroy s rešpektom`
+      link="/projects/agents"
+    />
+    <ProjectItem
+      name="Program rozvoja bývania Banská Bystrica"
+      description=`Projekt sa zameriava na pravidelnú organizáciu divalógových podujatí,
+          ktorých cieľom je vytvárať priestor pre praktizovanie zručností občanov
+          hosťovať konverzácie v kontexte aktuálnych spoločenských tém, ako aj
+          vyjadrovať a počúvať rozličné názoroy s rešpektom`
+      link="/projects/agents"
+    />
+    <ProjectItem
+      name="Príprava akčných plánov otvoreného vládnutia"
+      description=`Projekt sa zameriava na pravidelnú organizáciu divalógových podujatí,
+          ktorých cieľom je vytvárať priestor pre praktizovanie zručností občanov
+          hosťovať konverzácie v kontexte aktuálnych spoločenských tém, ako aj
+          vyjadrovať a počúvať rozličné názoroy s rešpektom`
+      link="/projects/agents"
+    />
+    <ProjectItem
+      name="IDEATHON pri tvorbe Integrovanej územnej stratégie"
+      description=`Projekt sa zameriava na pravidelnú organizáciu divalógových podujatí,
+          ktorých cieľom je vytvárať priestor pre praktizovanie zručností občanov
+          hosťovať konverzácie v kontexte aktuálnych spoločenských tém, ako aj
+          vyjadrovať a počúvať rozličné názoroy s rešpektom`
+      link="/projects/agents"
+    />
+    <ProjectItem
+      name="Platforma pre rozvoj športu a cestovného ruchu"
+      description=`Projekt sa zameriava na pravidelnú organizáciu divalógových podujatí,
+          ktorých cieľom je vytvárať priestor pre praktizovanie zručností občanov
+          hosťovať konverzácie v kontexte aktuálnych spoločenských tém, ako aj
+          vyjadrovať a počúvať rozličné názoroy s rešpektom`
+      link="/projects/agents"
+    />
+  </ProjectCategory>
+  <ProjectCategory
+    title="Rozvoj zručností pre získavanie kolektívnej inteligencie a rozvíjanie sociálnej kohézie"
+  >
+    <ProjectItem
+      name="Platforma pre rozvoj športu a cestovného ruchu"
+      description=`Projekt sa zameriava na pravidelnú organizáciu divalógových podujatí,
+      ktorých cieľom je vytvárať priestor pre praktizovanie zručností občanov
+      hosťovať konverzácie v kontexte aktuálnych spoločenských tém, ako aj
+      vyjadrovať a počúvať rozličné názoroy s rešpektom`
+      link="/projects/agents"
+    />
+    <ProjectItem
+      name="Platforma pre rozvoj športu a cestovného ruchu"
+      description=`Projekt sa zameriava na pravidelnú organizáciu divalógových podujatí,
+    ktorých cieľom je vytvárať priestor pre praktizovanie zručností občanov
+    hosťovať konverzácie v kontexte aktuálnych spoločenských tém, ako aj
+    vyjadrovať a počúvať rozličné názoroy s rešpektom`
+      link="/projects/agents"
+    />
+    <ProjectItem
+      name="Platforma pre rozvoj športu a cestovného ruchu"
+      description=`Projekt sa zameriava na pravidelnú organizáciu divalógových podujatí,
+  ktorých cieľom je vytvárať priestor pre praktizovanie zručností občanov
+  hosťovať konverzácie v kontexte aktuálnych spoločenských tém, ako aj
+  vyjadrovať a počúvať rozličné názoroy s rešpektom`
+      link="/projects/agents"
+    />
+    <ProjectItem
+      name="Platforma pre rozvoj športu a cestovného ruchu"
+      description=`Projekt sa zameriava na pravidelnú organizáciu divalógových podujatí,
+  ktorých cieľom je vytvárať priestor pre praktizovanie zručností občanov
+  hosťovať konverzácie v kontexte aktuálnych spoločenských tém, ako aj
+  vyjadrovať a počúvať rozličné názoroy s rešpektom`
+      link="/projects/agents"
+    />
+    <ProjectItem
+      name="Platforma pre rozvoj športu a cestovného ruchu"
+      description=`Projekt sa zameriava na pravidelnú organizáciu divalógových podujatí,
+  ktorých cieľom je vytvárať priestor pre praktizovanie zručností občanov
+  hosťovať konverzácie v kontexte aktuálnych spoločenských tém, ako aj
+  vyjadrovať a počúvať rozličné názoroy s rešpektom`
+      link="/projects/agents"
+    />
+  </ProjectCategory>
 </section>
+
+<!-- 
+<style>
+h1 {
+	display: block;
+	position: relative;
+	padding: 0.2em 0;
+}
+
+  h1::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0.1em;
+	background-color: ;
+	opacity: 0;
+	transition: opacity 300ms, transform 300ms;
+}
+
+  header h1 {
+  overflow: hidden;
+}
+
+header h1::after {
+  opacity: 1;
+  transform: translate3d(-100%, 0, 0);
+}
+
+header h1:hover::after,
+header h1:focus::after{
+  transform: translate3d(0, 0, 0);
+}
+</style> -->

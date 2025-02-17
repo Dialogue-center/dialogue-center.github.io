@@ -1,0 +1,18 @@
+---
+const {photo, name, responsibilities, email} = Astro.props;
+---
+
+<article id="team_member" class="flex md:max-w-1/2 mx-auto items-center">
+    <picture class="">
+        <img src={photo} alt="portrait" class="w-[300px] h-[300px] object-cover object-top ">
+    </picture>
+    <div id="name_card" class="flex flex-col gap-4 border border-red-500 p-6 bg-slate-300 rounded-lg ml-[-1rem] md:max-w-3/4 min-h-70">
+        <header>
+            <h1 class="font-medium text-2xl underline underline-offset-2">{name}</h1>
+        </header>
+        <p class=" font-normal grow
+        ">{responsibilities}</p>
+        <address class="mt-6 font-semibold rounded-md w-fit p-2 text-gray-200 bg-slate-900">{email}</address>
+    </div>
+
+</article>

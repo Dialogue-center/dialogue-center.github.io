@@ -1,16 +1,18 @@
 ---
 const logos = [
-  { src: "/logos/active_citizen_fund.png", alt: "Active Citizen Fund" },
-  { src: "/logos/agenti-koexistencie.png", alt: "Agenti Koexistencie" },
-  { src: "/logos/europska-komisia.png", alt: "Europska Komisia" },
-  { src: "/logos/oecd.png", alt: "OECD" },
-  { src: "/logos/spolupracovna.jpg", alt: "Spolupracovna" },
-  { src: "/logos/urbact.png", alt: "Urbact" }
+  { src: "/logos/active_citizen_fund.png", alt: "Active Citizen Fund", url: "https://acfslovakia.sk/en/home/" },
+  { src: "/logos/agenti-koexistencie.png", alt: "Agenti Koexistencie", url: "https://www.banskabystrica.sk/agentikoexistencie/" },
+  { src: "/logos/europska-komisia.png", alt: "Europska Komisia", url: "https://commission.europa.eu/index_sk" },
+  { src: "/logos/oecd.png", alt: "OECD", url: "https://www.oecd.org/" },
+  { src: "/logos/spolupracovna.jpg", alt: "Spolupracovna", url: "https://www.banskabystrica.sk/spolupracovna/" },
+  { src: "/logos/urbact.png", alt: "Urbact", url: "https://archive.urbact.eu/urbact-slovenska-republika" }
 ];
 ---
 
-<div class="w-full flex justify-center items-center bg-gray-100 py-4">
+<div class="h-fit flex justify-around items-center py-4 gap-5 flex-wrap grayscale-25">
   {logos.map((logo) => (
-    <img src={logo.src} alt={logo.alt} class="h-12 mx-4" />
+    <a href={logo.url} target="_blank" rel="noopener noreferrer">
+      <img src={logo.src} alt={logo.alt} class="h-24 opacity-40 hover:opacity-100" />
+    </a>
   ))}
 </div>

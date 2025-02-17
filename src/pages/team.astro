@@ -1,13 +1,37 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import TeamMemberCard from "@/components/TeamMemberCard.astro";
+import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
+import TeamMemberCardReverse from "@/components/TeamMemberCardReverse.astro";
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const { name, photo, responsibilities, email } = Astro.props;
 ---
 
 <Layout title="Dialogue center">
-	<div class="team">
-        Team page
-    </div>
+  <section class="team flex flex-col gap-15 mt-5 mb-5">
+    <TeamMemberCard
+      name="Michaela Kováčik Huľuková"
+      photo="https://cdn.razuna.eu/file/remote?i=67afb5983b5d57b9feba5310&f=t&dl=t&type=thumbnail&c=1bc745a1b7dfa9b14e1d105210596096&token=98f0ae25ebadeb9bac31047d1c41dc7fb7236adcbcaefac87f84846de91139af"
+      responsibilities="Pochádza z Banskej Bystrice, no titul magister práv získala na Univerzite Komenského v Bratislave. Po ukončení Magisterského štúdia absolvovala 9-mesačnú stáž v Českej Ženskej Lobby v Prahe, kde pôsobila ako asistentka projektovej manažérky projektu Hájíme práva žen v ČR, ktorá započala jej prácu v neziskovom sektore. V Dialogue centre pôsobí ako riaditeľka od roku 2022. "
+      email="michaela.hulukova@gmail.com"
+    />
+    <TeamMemberCard
+      name="Gabriel Karika, st."
+      photo="https://cdn.razuna.eu/file/remote?i=67afb89d9e30880d01809637&f=t&dl=t&type=thumbnail&c=a7a7e1a89bb4bb319227ddfe4ce9b668&token=98f0ae25ebadeb9bac31047d1c41dc7fb7236adcbcaefac87f84846de91139af"
+      responsibilities="vyštudoval filozofiu na Filozofickej fakulte Univerzity Komenského v Bratislave. Krátko na to sa preorientoval na prácu programátora a analytika. Po r. 1989 založil firmu, ktorá vyvíjala softvér. Činnosť firmy trvala zhruba 25 rokov, až po jeho odchod do dôchodku. Výber projektov firmy ovplyvňoval svojím záujmom o výskumnú a spoločensko-vednú problematiku. V súčasnosti má viac času, aby sa venoval svojim deťom – synovi a dcére, ale aj ski-alpinizmu, literatúre, filozofii a tai-chi."
+      email="gabriel.karika@google.com"
+    />
+    <TeamMemberCard
+      name="Michaela Beran Sladkayová"
+      photo="https://cdn.razuna.eu/file/remote?i=67afb9fd39fcd21828756a54&f=t&dl=t&type=thumbnail&c=1950fe2dc03fb354e889b73cc915905d&token=98f0ae25ebadeb9bac31047d1c41dc7fb7236adcbcaefac87f84846de91139af"
+      responsibilities="Michaela Beran SLádkayová pochádza z malej dedinky Nitrianske Sučany (okres Prievidza), ale od svojho štúdia na vysokej škole sa z nej stala banskobystričanka. Už od malička sa venovala práci v rôznych spoločenstvách a angažovala sa v rámci svojej komunity. To ju priviedlo k štúdiu andragogiky na Pedagogickej fakulte Univerzity Mateja Bela v Banskej Bystrici, kde vyštudovala všetky 3 stupne (Bc., Mgr., PhD.). Popri štúdiu sa tiež venovala dobrovoľníckej činnosti a pracovala pre Univerzitné pastoračné centrum Štefana Moysesa, biskupa v Banskej Bystrici ko koordinátorka aktivít pre vysokoškolských študentov. Po ukončení PhD. zostala, až dodnes, na akademickej pôde a aktuálne pôsobí na Katedre pedagogiky a andragogiky PF UMB. V rámci svojej činnosti sa venuje primárne občianskemu vzdelávaniu dospelých, ako aj neformálnemu učeniu. Má za sebou niekoľko vystúpení na medzinárodných vedeckých konferenciách a bola súčasťou domácich aj zahraničných vedecko-výskumných projektov zameraných na vzdelávanie dospelých, neformálne učenie, a rozvoj mediálnej gramotnosti."
+      email="michaela.sladkayova@google.com"
+    />
+    <TeamMemberCard
+      name="Tomáš Hudák"
+      photo="https://placehold.co/400x400/orange/white"
+      responsibilities="Coordinating events, workshops, and residencies, ensuring they align with the center's mission. Engaging with local communities, organizing discussions, lectures, and workshops on social and human rights topics."
+      email="tomas.hudak@google.com"   
+    />
+  </section>
 </Layout>
