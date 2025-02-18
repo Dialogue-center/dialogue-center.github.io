@@ -1,11 +1,11 @@
 ---
-const heroImage = "/logos/lightbulb_smoothed.png"; // Ensure correct path
+const heroImage = "/logos/Logo.png"; // Ensure correct path
 ---
 
 <!-- Hero Section -->
 <section class="flex flex-col lg:flex-row justify-center items-center px-12 py-16 relative md:max-w-3/4 md:mx-auto">
   <!-- Left Content -->
-  <div class="lg:w-1/2 text-center lg:text-left lg:pl-16">
+  <div class="lg:w-1/2 text-center lg:text-left lg:pl-16 flex flex-col items-center">
     <h1 class="text-6xl font-extrabold text-[#102756] font-sans md:font-stretch-expanded dark:text-blue-300">
       POĎME O TOM HOVORIŤ
     </h1>
@@ -14,15 +14,16 @@ const heroImage = "/logos/lightbulb_smoothed.png"; // Ensure correct path
       <span class="font-bold italic">skutočnú spoluprácu</span>.
     </p>
 
-    <!-- CTA Button -->
-    <a href="mailto:dialoguecenter@gmail.com" class="mt-10 inline-block bg-[#2878de] text-white text-lg font-medium px-6 py-3 rounded-lg shadow-md hover:bg-[#1f5cab] transition duration-300 font-nunito">
-      Napíšte nám &gt;
-    </a>
+      <!-- CTA Button (Perfectly Centered) -->
+      <a href="mailto:dialoguecenter@gmail.com" class="mt-6 bg-[#2878de] text-white text-lg font-medium px-6 py-3 rounded-lg shadow-md hover:bg-[#1f5cab] transition duration-300 font-nunito md:self-start">
+        Napíšte nám &gt;
+      </a>
+    </div>
   </div>
 
   <!-- Right Image -->
   <div class="lg:w-1/2 flex justify-center mt-10 lg:mt-0 dark:grayscale]">
-    <img src={heroImage} alt="Hero Image" class="max-w-full h-auto dark:hue-rotate-180 dark:grayscale dark:invert ">
+    <img src={heroImage} alt="Hero Image" class="max-w-full h-auto ">
   </div>
 
 </section>
