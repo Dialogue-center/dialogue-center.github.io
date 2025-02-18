@@ -6,12 +6,12 @@ const stats = [
 ];
 ---
 
-<section class="w-full bg-[#f8f8f8] py-25 flex justify-center">
+<section class="py-25 flex justify-center bg-blue-200 dark:bg-blue-950">
   <div class="max-w-5xl w-full flex flex-col lg:flex-row justify-between text-center">
     {stats.map((stat) => (
       <div class="flex flex-col items-center px-4">
-        <span class="text-8xl font-bold text-[#102756] font-nunito">{stat.number}</span>
-        <span class="text-gray-600 text-lg font-nunito">{stat.label}</span>
+        <span class="text-8xl font-bold text-[#102756] font-nunito dark:text-gray-200">{stat.number}</span>
+        <span class="text-gray-600 text-lg font-nunito dark:text-gray-400">{stat.label}</span>
       </div>
     ))}
   </div>

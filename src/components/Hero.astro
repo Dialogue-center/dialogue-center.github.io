@@ -3,13 +3,13 @@ const heroImage = "/logos/lightbulb_smoothed.png"; // Ensure correct path
 ---
 
 <!-- Hero Section -->
-<section class="flex flex-col lg:flex-row justify-center items-center px-12 py-16 bg-white relative md:max-w-3/4 md:mx-auto">
+<section class="flex flex-col lg:flex-row justify-center items-center px-12 py-16 relative md:max-w-3/4 md:mx-auto">
   <!-- Left Content -->
   <div class="lg:w-1/2 text-center lg:text-left lg:pl-16">
-    <h1 class="text-6xl font-extrabold text-[#102756] font-nunito">
+    <h1 class="text-6xl font-extrabold text-[#102756] font-sans md:font-stretch-expanded dark:text-blue-300">
       POĎME O TOM HOVORIŤ
     </h1>
-    <p class="text-gray-700 text-[1.5rem] mt-4 font-nunito">
+    <p class="text-gray-700 text-[1.5rem] mt-4 font-nunito dark:text-gray-300">
       Podporme dialóg, ktorý vedie k múdrejším a ľudskejším riešeniam a vytvára 
       <span class="font-bold italic">skutočnú spoluprácu</span>.
     </p>
@@ -21,12 +21,8 @@ const heroImage = "/logos/lightbulb_smoothed.png"; // Ensure correct path
   </div>
 
   <!-- Right Image -->
-  <div class="lg:w-1/2 flex justify-center mt-10 lg:mt-0">
-    <img src={heroImage} alt="Hero Image" class="max-w-full h-auto">
+  <div class="lg:w-1/2 flex justify-center mt-10 lg:mt-0 dark:grayscale]">
+    <img src={heroImage} alt="Hero Image" class="max-w-full h-auto dark:hue-rotate-180 dark:grayscale dark:invert ">
   </div>
 
-  <!-- Divider Line -->
-  <div class="absolute bottom-0 left-0 w-full flex justify-center">
-    <div class="w-7/10 h-1 bg-gray-300"></div>
-  </div>
 </section>
