@@ -1,18 +1,27 @@
 ---
-const {photo, name, responsibilities, email} = Astro.props;
+const { photo, name, responsibilities, email } = Astro.props;
 ---
 
-<article id="team_member" class="flex md:max-w-1/2 md:mx-auto m-5 dark:text-white dark:bg-gray-900 rounded-xl p-2">
-    <picture class="min-w-1/4">
-        <img src={photo} alt="portrait" class="w-[300px] h-[300px] object-cover object-top rounded-xl shadow-md grayscale">
-    </picture>
-    <div id="name_card" class="flex flex-col gap-4 pl-10">
-        <header>
-            <h1 class="font-medium text-2xl underline underline-offset-2">{name}</h1>
-        </header>
-        <p class=" font-normal grow
-        ">{responsibilities}</p>
-        <address class="text-xl text-white  not-italic mt-auto font-medium rounded-sm w-fit p-2 shadow-md bg-blue-400">{email}</address>
-    </div>
-
+<article
+  id="team_member"
+  class="flex md:max-w-1/2 md:mx-auto m-5 dark:text-white dark:bg-gray-900 rounded-xl p-2"
+>
+  <picture class="min-w-1/4">
+    <img
+      src={photo}
+      alt="portrait"
+      class="w-[300px] h-[300px] object-cover object-top rounded-xl shadow-md grayscale"
+    />
+  </picture>
+  <div id="name_card" class="flex flex-col gap-4 pl-10">
+    <header>
+      <h1 class="font-medium text-2xl underline underline-offset-2">{name}</h1>
+    </header>
+    <p class="font-normal grow">{responsibilities}</p>
+    <address
+      class="text-xl text-white not-italic mt-auto font-medium rounded-sm w-fit p-2 shadow-md bg-blue-400"
+    >
+      {email}
+    </address>
+  </div>
 </article>

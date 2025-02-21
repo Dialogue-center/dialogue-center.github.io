@@ -1,0 +1,23 @@
+---
+
+
+const {date, name, tags, description} = Astro.props
+---
+
+<div class="flex items-center border shadow-md bg-white rounded-md p-6 mb-6 relative w-full">
+    <!-- Calendar Date Section -->
+    <div class="w-28 flex flex-col items-center text-center bg-orange-300 text-white font-bold py-4 relative rounded-md">
+        <div class="text-2xl">15</div>
+        <div class="text-sm">Jan 2025</div>
+    </div>
+
+    <!-- Event Details -->
+    <div class="ml-6 flex-1">
+        <h3 class="text-2xl font-bold">{name}</h3>
+        <p class="text-gray-600">{tags}</p>
+        <p class="text-gray-800 mt-2">
+            {description}
+        </p>
+        <a href="#" class="mt-4 block text-blue-600 underline">Event Link</a>
+    </div>
+</div>
