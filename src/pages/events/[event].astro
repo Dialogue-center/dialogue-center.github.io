@@ -1,0 +1,19 @@
+---
+import EventLayout from '@/layouts/EventLayout.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  // const events : any = await getCollection('events');
+  const events: any = await Astro.glob("../../content/events/**/*.md");
+
+  return events.map((_event:any) => ({
+    params: { event: "revolution" },
+    props: { _event },
+  }))
+}
+
+const {_event} = Astro.props;
+---
+<EventLayout>
+  {_event}
+</EventLayout>  

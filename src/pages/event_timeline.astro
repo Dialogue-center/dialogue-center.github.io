@@ -1,0 +1,32 @@
+---
+import EventCard from "@/components/EventCard.astro";
+import Layout from "@/layouts/Layout.astro";
+import Timeline from "@/layouts/Timeline.astro";
+import "../styles/global.css";
+import { date } from "astro:schema";
+import { getCollection, render } from 'astro:content'
+import TimelineEvent from "@/components/TimelineEvent.astro";
+import { EventTypes } from "@/components/types/EventTypes";
+
+const events = await Astro.glob("../content/events/**/*.md");
+events.map(e => {
+    console.log(e.frontmatter.title)
+})
+---
+
+<Layout>
+  <div class="flex justify-center">
+    <Timeline>
+      {
+        events.map((event) => {
+        return <TimelineEvent
+            name={event.frontmatter.title}
+            date={event.frontmatter.date}
+            description={event.frontmatter.description}
+            type={EventTypes.discussion}
+          ></TimelineEvent>;
+        })
+      }
+    </Timeline>
+  </div>
+</Layout>
