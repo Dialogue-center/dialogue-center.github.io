@@ -1,0 +1,49 @@
+{
+    "sk": {
+      "about": {
+        "title": "NAŠE POSLANIE",
+        "text": "Našim poslaním je rozvíjať kultúru dialógu a vytvárať priestor pre spoluprácu medzi vládami, občanmi a súkromným sektorom. Veríme, že spoločný dialóg a učenie sa od seba navzájom vedie k múdrejším riešeniam a lepším vzťahom."
+      },
+      "carousel": [
+        {
+          "title": "Program rozvoja bývania 2035",
+          "text": "Pomohli sme vytvoriť Program rozvoja bývania 2035 pre Mesto Banská Bystrica.",
+          "button": "Zistite viac"
+        },
+        {
+          "title": "Druhý projekt",
+          "text": "Tento projekt sa zameriava na podporu udržateľného rozvoja v meste.",
+          "button": "Zistite viac"
+        },
+        {
+          "title": "Tretí projekt",
+          "text": "Spájame komunity a podporujeme dialóg pre lepšiu budúcnosť.",
+          "button": "Zistite viac"
+        }
+      ]
+    },
+    "en": {
+      "about": {
+        "title": "OUR MISSION",
+        "text": "Our mission is to develop a culture of dialogue and create space for cooperation between governments, citizens, and the private sector. We believe that mutual dialogue and learning from each other lead to wiser solutions and better relationships."
+      },
+      "carousel": [
+        {
+          "title": "Housing Development Program 2035",
+          "text": "We helped create the Housing Development Program 2035 for the City of Banská Bystrica.",
+          "button": "Learn More"
+        },
+        {
+          "title": "Second Project",
+          "text": "This project focuses on supporting sustainable development in the city.",
+          "button": "Learn More"
+        },
+        {
+          "title": "Third Project",
+          "text": "We connect communities and promote dialogue for a better future.",
+          "button": "Learn More"
+        }
+      ]
+    }
+  }
+  
