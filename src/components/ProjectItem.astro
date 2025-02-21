@@ -3,22 +3,22 @@ const {name, description, link} = Astro.props;
 ---
 
 <div
-      class=" flex flex-col p-4 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 hover:outline-blue-500 hover:outline-1"
+      class=" flex flex-col gap-3 p-4 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 hover:shadow-xl transition duration-300 ease-in-out " 
     >
-      <a href="#">
+      <a href={link}>
         <h5S
-          class="mb-2 text-2xl  tracking-tight text-gray-900 dark:text-white"
+          class="mb-2 text-2xl  tracking-tight text-gray-900 dark:text-white hover:text-blue-600 "
         >
         {name}
         </h5>
       </a>
-      <p class="mb-10 font-normal text-sm text-gray-700 dark:text-gray-400">
+      <p class="md:max-w-7/8 font-normal text-sm text-gray-600 dark:text-gray-400">
         {description}
       </p>
       <div class="self-end">
         <a
           href={link}
-          class="w-fit inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          class="w-fit inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-400 rounded-lg hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
         >
         Viac
           <svg
