@@ -1,31 +1,42 @@
 ---
-import EventCard from "@/components/EventCard.astro";
 import Layout from "@/layouts/Layout.astro";
 import Timeline from "@/layouts/Timeline.astro";
 import "../styles/global.css";
-import { date } from "astro:schema";
-import { getCollection, render } from 'astro:content'
 import TimelineEvent from "@/components/TimelineEvent.astro";
-import { EventTypes } from "@/components/types/EventTypes";
+
 
 const events = await Astro.glob("../content/events/**/*.md");
-events.map(e => {
-    console.log(e.frontmatter.title)
-})
 ---
 
 <Layout>
   <div class="flex justify-center">
     <Timeline>
       {
-        events.map((event) => {
-        return <TimelineEvent
-            name={event.frontmatter.title}
-            date={event.frontmatter.date}
-            description={event.frontmatter.description}
-            type={EventTypes.discussion}
-          ></TimelineEvent>;
-        })
+        events
+          .sort((a, b) => {
+            const parseDate = (dateStr: string): number => {
+              const [day, month, year] = dateStr.split(".").map(Number);
+              return new Date(year, month, day).getTime();
+            };
+
+            return (
+              parseDate(b.frontmatter.publish_date) -
+              parseDate(a.frontmatter.publish_date)
+            );
+          })
+          .map((event: any) => {
+            return (
+              <TimelineEvent
+                name={event.frontmatter.title}
+                date={event.frontmatter.publish_date}
+                description={event.frontmatter.description}
+                type={event.frontmatter.type}
+                project={event.frontmatter.project}
+                edition={event.frontmatter.edition}
+                link={event.frontmatter.slug}
+              />
+            );
+          })
       }
     </Timeline>
   </div>

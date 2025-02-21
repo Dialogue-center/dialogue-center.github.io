@@ -1,18 +1,86 @@
 ---
 import { EventTypes } from "./types/EventTypes";
 
+const { name, date, description, type, link, project, edition } = Astro.props as {
+  name: string;
+  date: string;
+  link: string;
+  edition: number;
+  project: string;
+  description: string;
+  type: EventTypes; // Ensure type is explicitly an EventTypes value
+};
 
+const full_route = "/events/" + link;
 
-const {name,date, description, type} = Astro.props
-const bg_color = "bg-" + type + "-400";
-const text_color = "text-" + type + "-400"; 
+// Map event colors based on the values in EventTypes
+const colorMap: Record<string, { bg: string; ring: string; icon: string, text:string }> = {
+  Workshop: {
+    bg: "bg-blue-100 dark:bg-blue-900",
+    ring: "ring-white dark:ring-gray-900",
+    icon: "text-blue-700 dark:text-blue-300",
+    text: "text-blue-400 dark:text-blue-400",
+  },
+  Discussion: {
+    bg: "bg-green-100 dark:bg-green-900",
+    ring: "ring-white dark:ring-gray-900",
+    icon: "text-green-700 dark:text-green-400",
+    text: "text-green-400 dark:text-green-400",
+
+  },
+  Conference: {
+    bg: "bg-amber-100 dark:bg-amber-900",
+    ring: "ring-white dark:ring-gray-900",
+    icon: "text-amber-700 dark:text-amber-400",
+    text: "text-amber-400 dark:text-amber-400",
+
+  },
+  default: {
+    bg: "bg-gray-100 dark:bg-gray-700",
+    ring: "ring-white dark:ring-gray-900",
+    icon: "text-gray-700 dark:text-gray-300",
+    text: "text-gray-100 dark:text-gray-300",
+
+  },
+};
+
+// Get colors for the current event type or fall back to default
+const { bg, ring, icon, text } = colorMap[type] || colorMap.default;
 ---
- 
-<span class={`absolute flex items-center justify-center w-6 h-6 ${bg_color} rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900`}>
-    <svg class={`w-2.5 h-2.5 dark:text-blue-300 ${text_color}`} aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-        <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+
+<li class="mb-10 ms-6">
+  <span
+    class={`absolute flex items-center justify-center w-6 h-6 ${bg} rounded-full -start-3 ring-8 ${ring}`}
+  >
+    <svg
+      class={`w-2.5 h-2.5 ${icon}`}
+      aria-hidden="true"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="currentColor"
+      viewBox="0 0 20 20"
+    >
+      <path
+        d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"
+      ></path>
     </svg>
-</span>
-<h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">{name}</h3>
-<time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">{date}</time>
-<p class="text-base font-normal text-gray-500 dark:text-gray-400">{description}</p>
+  </span>
+
+  <a href={full_route}>
+      <h3
+        class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white"
+      >
+        {name}
+      </h3>
+  </a>
+  <time
+    class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+    >{date}</time
+  >
+  <p
+    class={`"block mb-2 text-sm font-normal leading-none ${text}`}
+    ><a href="/dialogues">{project}</a> #{edition}</p
+  >
+  <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+    {description}
+  </p>
+</li>

@@ -1,19 +1,26 @@
 ---
 import EventLayout from '@/layouts/EventLayout.astro';
-import { getCollection, render } from 'astro:content';
+import Layout from '@/layouts/Layout.astro';
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import "@/styles/global.css";
+
 
 export async function getStaticPaths() {
-  // const events : any = await getCollection('events');
-  const events: any = await Astro.glob("../../content/events/**/*.md");
+  const events : any = await getCollection('events');
 
   return events.map((_event:any) => ({
-    params: { event: "revolution" },
-    props: { _event },
+    params: { event: _event.id },
+    props: _event ,
   }))
 }
 
-const {_event} = Astro.props;
+type Props = CollectionEntry<'events'>;
+
+const _event = Astro.props;
+const {Content} = await render(_event);
 ---
-<EventLayout>
-  {_event}
-</EventLayout>  
+<Layout>
+  <EventLayout {..._event.data}>
+    <Content />
+  </EventLayout>
+</Layout>
