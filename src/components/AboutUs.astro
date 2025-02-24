@@ -1,9 +1,13 @@
 ---
-const aboutImage = "/logos/about_us_photo.jpeg"; // Ensure correct path
+
+
+const aboutImage = "/logos/about_us_photo.jpeg"; 
+
+
+const { title,text } = Astro.props;
 ---
 
-<section class="w-full flex flex-col lg:flex-row justify-center items-center px-8 py-16 ">
-  
+<section class="w-full flex flex-col lg:flex-row justify-center items-center px-8 py-16">
   <!-- Image Section -->
   <div class="lg:w-1/3 p-4 border-2 border-[#2878de] rounded-lg shadow-lg lg:mr-[-4%]">
     <img src={aboutImage} alt="About Us Image" class="w-full h-auto rounded-lg">
@@ -11,12 +15,7 @@ const aboutImage = "/logos/about_us_photo.jpeg"; // Ensure correct path
 
   <!-- Text Section -->
   <div class="lg:w-1/3 p-6 border-2 border-[#2878de] rounded-lg shadow-lg bg-white ml-6 mt-6 lg:mt-0">
-    <h2 class="text-4xl font-bold font-['Nunito'] text-[#102756] uppercase">NAŠE POSLANIE</h2>
-    <p class="text-gray-700 text-[1.5rem] font-['Nunito'] mt-4">
-      Našim poslaním je rozvíjať kultúru dialógu a vytvárať priestor pre spoluprácu 
-      medzi vládami, občanmi a súkromným sektorom. Veríme, že spoločný dialóg a učenie 
-      sa od seba navzájom vedie k múdrejším riešeniam a lepším vzťahom.
-    </p>
+    <h2 class="text-4xl font-bold font-['Nunito'] text-[#102756] uppercase">{title}</h2>
+    <p class="text-gray-700 text-[1.5rem] font-['Nunito'] mt-4">{text}</p>
   </div>
-
 </section>

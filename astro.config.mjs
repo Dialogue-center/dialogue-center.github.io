@@ -1,8 +1,18 @@
-// @ts-check
+// astro.config.mjs
 import { defineConfig } from 'astro/config';
 import tailwindcss from "@tailwindcss/vite";
+import react from '@astrojs/react';
 
-// https://astro.build/config
 export default defineConfig({
-    vite: {    plugins: [tailwindcss()],  },
+  vite: {
+    plugins: [tailwindcss()],
+  },
+  integrations: [react()],
+  i18n: {
+    locales: ["sk", "en"], // Supported locales
+    defaultLocale: "sk",   // Default language (this will be overridden by localStorage in the frontend)
+    routing: {
+      prefixDefaultLocale: false,
+    },
+  },
 });

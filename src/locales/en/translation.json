@@ -1,0 +1,16 @@
+{
+  "contact": {
+    "heading1": "Don't hesitate to contact us",
+    "heading2": "We are here for you"
+  },
+  "team": {
+    "responsibilities_miska": "She comes from Banská Bystrica but earned her Master of Laws degree at Comenius University in Bratislava. After completing her master's studies, she undertook a 9-month internship at the Czech Women's Lobby in Prague, where she worked as an assistant project manager for the 'Defending Women's Rights in the Czech Republic' project, which initiated her work in the non-profit sector. She has been serving as the director at the Dialogue Center since 2022.",
+    "responsibilities_miska2": "Michaela Beran Sladkayová comes from the small village of Nitrianske Sučany, but since her university studies, she has become a resident of Banská Bystrica. From a young age, she was involved in various communities and engaged within her community. This led her to study andragogy at the Faculty of Education at Matej Bel University in Banská Bystrica, where she completed all three degrees (Bachelor's, Master's, Ph.D.). During her studies, she also engaged in volunteer activities and worked for the University Pastoral Center.",
+    "responsibilities_gabriel": "He studied philosophy at the Faculty of Arts at Comenius University in Bratislava. Shortly thereafter, he transitioned to working as a programmer and analyst. After 1989, he founded a company that developed software. The company's activities lasted approximately 25 years until his retirement. The selection of the company's projects was influenced by his interest in research and social sciences. Currently, he has more time to devote to his children—a son and a daughter—as well as to ski mountaineering, literature, philosophy, and tai chi.",
+    "responsibilities_tomas": "He coordinates events, workshops, and residencies, ensuring they align with the center's mission. He engages local communities, organizes discussions, lectures, and workshops on social and human rights topics."
+  },
+  "about_us": {
+    "title": "About Us",
+    "text": "The Dialogue Center is a non-profit organization that aims to develop a culture of dialogue and create space for cooperation between governments, citizens, and the private sector. We believe that mutual dialogue and learning from each other lead to wiser solutions and better relationships."
+  }
+}

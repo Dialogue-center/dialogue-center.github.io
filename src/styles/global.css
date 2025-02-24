@@ -2,6 +2,11 @@
 
 
 
+
+@custom-variant dark (&:is(.dark *));
+
+
+* { border: 1px dashed bonewhite; }
 @layer base {
   :root {
     --background: 0 0% 100%;

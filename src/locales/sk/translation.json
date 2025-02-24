@@ -1,0 +1,20 @@
+{
+    "contact":{
+        "heading1":"Neváhajte sa nám ozvať",
+        "heading2":"Sme tu pre vás"
+    }
+    ,
+    "team": 
+      {
+        "responsibilities_miska": "Pochádza z Banskej Bystrice, no titul magister práv získala na Univerzite Komenského v Bratislave. Po ukončení Magisterského štúdia absolvovala 9-mesačnú stáž v Českej Ženskej Lobby v Prahe, kde pôsobila ako asistentka projektovej manažérky projektu Hájíme práva žen v ČR, ktorá započala jej prácu v neziskovom sektore. V Dialogue centre pôsobí ako riaditeľka od roku 2022.",
+        "responsibilities_miska2": "Michaela Beran Sladkayová pochádza z malej dedinky Nitrianske Sučany, ale od svojho štúdia na vysokej škole sa z nej stala banskobystričanka. Už od malička sa venovala práci v rôznych spoločenstvách a angažovala sa v rámci svojej komunity. To ju priviedlo k štúdiu andragogiky na Pedagogickej fakulte Univerzity Mateja Bela v Banskej Bystrici, kde vyštudovala všetky 3 stupne (Bc., Mgr., PhD.). Popri štúdiu sa tiež venovala dobrovoľníckej činnosti a pracovala pre Univerzitné pastoračné centrum.",
+        "responsibilities_gabriel": "Vyštudoval filozofiu na Filozofickej fakulte Univerzity Komenského v Bratislave. Krátko na to sa preorientoval na prácu programátora a analytika. Po r. 1989 založil firmu, ktorá vyvíjala softvér. Činnosť firmy trvala zhruba 25 rokov, až po jeho odchod do dôchodku. Výber projektov firmy ovplyvňoval svojím záujmom o výskumnú a spoločensko-vednú problematiku. V súčasnosti má viac času, aby sa venoval svojim deťom – synovi a dcére, ale aj ski-alpinizmu, literatúre, filozofii a tai-chi.",
+        "responsibilities_tomas": "Koordinuje podujatia, workshopy a rezidencie, zabezpečuje, aby boli v súlade s poslaním centra. Zapája miestne komunity, organizuje diskusie, prednášky a workshopy o spoločenských a ľudskoprávnych témach."
+
+      },
+    "about_us": {
+        "title":"O nás",
+        "text":"Dialogue Center je nezisková organizácia, ktorej cieľom je rozvíjať kultúru dialógu a vytvárať priestor pre spoluprácu medzi vládami, občanmi a súkromným sektorom. Veríme, že spoločný dialóg a učenie sa od seba navzájom vedie k múdrejším riešeniam a lepším vzťahom."
+    }
+    
+}

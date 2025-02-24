@@ -1,18 +1,18 @@
 ---
 
 import TeamMemberCard from "@/components/TeamMemberCard.astro";
-import Layout from "../layouts/Layout.astro";
+import Layout from "../../layouts/Layout.astro";
 
-import "../styles/global.css";
+import "../../styles/global.css";
 
 import i18next, { t, init } from "i18next";
 
-import skTranslation from "../locales/sk/translation.json";
-import enTranslation from "../locales/en/translation.json";
+import skTranslation from "../../locales/sk/translation.json";
+import enTranslation from "../../locales/en/translation.json";
 
 
 await init({
-  lng: "sk", // Set default language to Slovak
+  lng: "en", // Set default language to Slovak
   debug: true,
   resources: {
     en: { translation: enTranslation },

@@ -4,10 +4,47 @@ import Main from '../components/Main.astro';
 import Layout from '../layouts/Layout.astro';
 import "../styles/global.css";
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Hero from "../components/Hero.astro"; 
+import Devider from '../components/Devider.astro';
+import AboutUs from '../components/AboutUs.astro';
+import Events from '@/components/Events.astro';
+import Statistics from '@/components/Statistics.astro';
+import Carousel from '@/components/Carousel.astro';	
+
+
+import i18next, { t, init } from "i18next";
+
+// ✅ Import JSON translations directly
+import enTranslation from "../locales/en/translation.json";
+import skTranslation from "../locales/sk/translation.json";
+
+// ✅ Initialize i18next with direct imports
+await init({
+  lng: "sk", // Default to English
+  debug: true,
+  resources: {
+    en: { translation: enTranslation },
+    sk: { translation: skTranslation }
+  }
+});
 ---
 
+
+
 <Layout title="Dialogue center">
-	<HomeLayout/>
+
+<Hero />
+<Devider/>
+<AboutUs
+title={t("about_us.title")}
+text = {t("about_us.text")}
+/>
+<Statistics/>
+<Carousel/>
+<Devider/>
+<Events/>
+<slot />
 </Layout>

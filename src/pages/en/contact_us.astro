@@ -1,20 +1,22 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import "../styles/global.css";
+import Layout from "../../layouts/Layout.astro";
+import "../../styles/global.css";
 import i18next, { t, init } from "i18next";
 
-import skTranslation from "../locales/sk/translation.json";
-import enTranslation from "../locales/en/translation.json";
+// ✅ Import JSON translations directly
+import enTranslation from "../../locales/en/translation.json";
+import skTranslation from "../../locales/sk/translation.json";
 
-
+// ✅ Initialize i18next with direct imports
 await init({
-  lng: "sk", // Set default language to Slovak
+  lng: "en", // Default to English
   debug: true,
   resources: {
     en: { translation: enTranslation },
     sk: { translation: skTranslation }
   }
 });
+
 ---
 
 <Layout title="Dialogue Center">
@@ -26,7 +28,7 @@ await init({
       <!-- Contact Info -->
       <div class="space-y-6">
         
-                <div class="space-y-2">
+                <div class="space-y-2 text-2xl">
                   <a
                     href="mailto:dialoguecentre13@gmail.com"
                     class="text-blue-600 hover:underline"

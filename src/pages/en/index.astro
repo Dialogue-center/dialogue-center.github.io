@@ -1,0 +1,13 @@
+---
+import { changeLanguage } from "i18next";
+import HomeLayout from "@/layouts/HomeLayout.astro";
+import Main from "../../components/Main.astro";
+import Layout from "../../layouts/Layout.astro";
+import "../../styles/global.css";
+
+changeLanguage("en");
+---
+
+<Layout title="Dialogue center">
+	<HomeLayout/>
+</Layout>
