@@ -1,0 +1,88 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "../../styles/global.css";
+import i18next, { t, init } from "i18next";
+
+// ✅ Import JSON translations directly
+import enTranslation from "../../locales/en/translation.json";
+import skTranslation from "../../locales/sk/translation.json";
+
+// ✅ Initialize i18next with direct imports
+await init({
+  lng: "en", // Default to English
+  debug: true,
+  resources: {
+    en: { translation: enTranslation },
+    sk: { translation: skTranslation }
+  }
+});
+
+---
+
+<Layout title="Dialogue Center">
+  <section class="max-w-5xl mx-auto px-6 py-12 text-center md:text-left">
+    <h1 class="text-4xl font-bold mb-4">{t("contact.heading1")}</h1>
+    <p class="text-xl text-gray-600 mb-8">{t("contact.heading2")}</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+      <!-- Contact Info -->
+      <div class="space-y-6">
+        
+                <div class="space-y-2 text-2xl">
+                  <a
+                    href="mailto:dialoguecentre13@gmail.com"
+                    class="text-blue-600 hover:underline"
+                  >
+                    dialoguecentre13@gmail.com
+                  </a>
+                  <br />
+                  <a href="tel:+421908358915" class="text-blue-600 hover:underline">
+                    +421 908 358 915
+                  </a>
+                </div>
+        <p class="text-lg font-semibold">Dialogue Centre, n. o.</p>
+        <p>Horná 12<br />974 01 Banská Bystrica<br />Slovakia</p>
+        <p>IČO: 51281279</p>
+
+        <!-- Social Links -->
+        <div class="flex items-center space-x-4 justify-center md:justify-normal">
+          <a
+            href="https://www.facebook.com/UKCEEDialogueCentre"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:opacity-80 transition duration-300"
+          >
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 65 64"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_200_116)">
+                <path
+                  d="M64.3331 32C64.3331 14.327 50.0061 0 32.3331 0C14.6602 0 0.33313 14.327 0.33313 32C0.33313 47.0067 10.6653 59.5994 24.6032 63.0579V41.7792H18.0048V32H24.6032V27.7862C24.6032 16.8947 29.5325 11.8464 40.2256 11.8464C42.2531 11.8464 45.7514 12.2445 47.1824 12.6413V21.5053C46.4272 21.4259 45.1152 21.3862 43.4858 21.3862C38.2391 21.3862 36.2115 23.3741 36.2115 28.5414V32H46.664L44.8682 41.7792H36.2115V63.7658C52.0567 61.8522 64.3344 48.361 64.3344 32H64.3331Z"
+                  fill="#0866FF"></path>
+                <path
+                  d="M44.8669 41.779L46.6627 31.9998H36.2103V28.5412C36.2103 23.3739 38.2378 21.386 43.4845 21.386C45.1139 21.386 46.4259 21.4257 47.1811 21.5051V12.6411C45.7501 12.243 42.2519 11.8462 40.2243 11.8462C29.5312 11.8462 24.6019 16.8945 24.6019 27.786V31.9998H18.0035V41.779H24.6019V63.0577C27.0775 63.6721 29.6669 63.9998 32.3319 63.9998C33.6439 63.9998 34.9379 63.9191 36.209 63.7655V41.779H44.8656H44.8669Z"
+                  fill="white"></path>
+              </g>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Google Map -->
+      <div class="overflow-hidden rounded-lg shadow-lg">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5782.219533620256!2d19.14582812123396!3d48.73819171575444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47153d23342eedaf%3A0x763988790f033fb!2sHorn%C3%A1%2012%2C%20974%2001%20Bansk%C3%A1%20Bystrica!5e0!3m2!1sen!2ssk!4v1739802037832!5m2!1sen!2ssk"
+          width="100%"
+          height="350"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+</Layout>
