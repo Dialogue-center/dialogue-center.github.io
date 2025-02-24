@@ -1,4 +1,5 @@
 ---
+slug: connected-in-isolation
 layout: ../../../layouts/EventLayout.astro
 title: Spájanie sa online v časoch fyzickej izolácie
 author: Miroslav Šimkovič
