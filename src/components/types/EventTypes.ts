@@ -1,5 +1,5 @@
 export enum EventTypes {
-    workshop = "blue",
-    discussion = "green",
-    conference = "amber",
+    workshop = "Workshop",
+    discussion = "Discussion",
+    conference = "Conference",
   }

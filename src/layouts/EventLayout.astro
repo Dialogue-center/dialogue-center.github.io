@@ -1,0 +1,34 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+
+type Props = CollectionEntry<'events'>['data'];
+
+const { title, author, publish_date, description, project, project_link ,edition } = Astro.props;
+
+const project_route = "/projects/" + project_link
+// TODO: add dictonary for linking project names to project routes
+---
+<section class="md:max-w-1/2 md:mx-auto my-5 mx-2 flex flex-col gap-2">
+    <h1 class="text-5xl font-bold">{title}</h1>
+    <a href={project_route} class="text-blue-400 text-xl font-semibold"> 
+        <h4>{project} #{edition}</h4>
+    </a>
+    <div class="text-gray-500">
+        <h2 class="italic">{author}</h2>
+        <h2>{publish_date}</h2>
+    </div>
+    
+    <p id="event_content_slot" > 
+      <slot />
+    </p>
+</section>
+
+
+<style is:global>
+    #event_content_slot{
+        font-size: 2rem;
+        background-color: aqua;
+    }
+
+</style>
