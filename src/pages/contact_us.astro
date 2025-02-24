@@ -1,18 +1,32 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
+import i18next, { t, init } from "i18next";
+
+import skTranslation from "../locales/sk/translation.json";
+import enTranslation from "../locales/en/translation.json";
+
+
+await init({
+  lng: "sk", // Set default language to Slovak
+  debug: true,
+  resources: {
+    en: { translation: enTranslation },
+    sk: { translation: skTranslation }
+  }
+});
 ---
 
 <Layout title="Dialogue Center">
   <section class="max-w-5xl mx-auto px-6 py-12 text-center md:text-left">
-    <h1 class="text-4xl font-bold mb-4">Neváhajte sa nám ozvať</h1>
-    <p class="text-xl text-gray-600 mb-8">Sme tu pre vás</p>
+    <h1 class="text-4xl font-bold mb-4">{t("contact.heading1")}</h1>
+    <p class="text-xl text-gray-600 mb-8">{t("contact.heading2")}</p>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
       <!-- Contact Info -->
       <div class="space-y-6">
         
-                <div class="space-y-2 text-2xl">
+                <div class="space-y-2">
                   <a
                     href="mailto:dialoguecentre13@gmail.com"
                     class="text-blue-600 hover:underline"
