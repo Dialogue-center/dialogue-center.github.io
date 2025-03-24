@@ -1,15 +1,40 @@
 ---
-import { changeLanguage, init } from "i18next";
+import { changeLanguage } from "i18next";
 import Layout from "../../layouts/Layout.astro";
 import "../../styles/global.css";
-
 
 changeLanguage("sk");
 ---
 
+<Layout title="Dialogue centre">
+  <section class="flex flex-col items-center gap-4 mb-8">
+    <div class="w-fit flex flex-col gap-5 md:max-w-1/2 md:mx-2">
+      <h2 class="text-4xl font-semibold mt-8">Dialógy s verejnosťou</h2>
 
-<Layout>
-    <h1 class="md:max-w-1/2 md:mx-auto">
-        Dialogy
-    </h1>
+      <p>
+        Projekt <em>Dialógy s verejnosťou</em> predstavuje sériu verejných diskusií,
+        ktoré spájajú obyvateľov Banskej Bystrice, odborníkov a volených zástupcov.
+        Cieľom je vytvárať priestor pre otvorený dialóg, zdieľanie skúseností a posilňovanie
+        demokratickej kultúry. V rámci projektu sa uskutočnilo niekoľko dialógov
+        s rôznymi témami – od politických otázok až po solidarity v krízových časoch. 
+      </p>
+
+      <h3 class="text-2xl font-semibold mt-8">Zoznam podujatí</h3>
+      <ul class="list-disc list-inside text-blue-600 space-y-1">
+        <li><a href="/events/bystrica-meni-svet" class="underline">Bystrica mení svet</a></li>
+        <li><a href="/events/connected_in_isolation" class="underline">Connected in Isolation</a></li>
+        <li><a href="/events/depolarizacia" class="underline">Depolarizácia</a></li>
+        <li><a href="/events/election2020" class="underline">Election 2020</a></li>
+        <li><a href="/events/migracia-a-solidarita" class="underline">Migrácia a solidarita</a></li>
+        <li><a href="/events/polarization" class="underline">Polarization</a></li>
+        <li><a href="/events/revolution" class="underline">Revolution</a></li>
+        <li><a href="/events/solidarita-v-ohrozeni" class="underline">Solidarita v ohrození</a></li>
+      </ul>
+
+      <p class="italic text-sm text-gray-500 mt-4">
+        Táto stránka bude priebežne aktualizovaná o nové dialógy.
+      </p>
+    </div>
+  </section>
 </Layout>
+

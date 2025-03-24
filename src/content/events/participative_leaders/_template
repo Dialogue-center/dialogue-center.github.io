@@ -1,0 +1,14 @@
+---
+slug: <name_of_the_route>
+layout: ../../../layouts/EventLayout.astro
+title: <String>
+author: <String>
+publish_date: DD.MM.YYYY
+description: <String>
+project: Participatívne líderky
+project_link: participative_leaders
+edition: <incremental_number>
+type: ENUM<Discussion, Workshop, Conference>
+---
+
+Some text!

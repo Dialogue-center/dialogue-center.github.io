@@ -1,0 +1,66 @@
+---
+import { changeLanguage } from "i18next";
+import Gallery from "@/components/Gallery.astro";
+import Layout from "../../layouts/Layout.astro";
+import "../../styles/global.css";
+
+changeLanguage("sk");
+---
+
+<Layout title="Dialogue centre">
+  <section class="flex flex-col items-center gap-4 mb-8">
+    <div class="w-fit flex flex-col gap-5 md:max-w-1/2 md:mx-2">
+      <h2 class="font-semibold text-3xl mt-8">
+        Iniciatíva Partnerstva pre Otvorené vládnutie na miestnej úrovni
+      </h2>
+
+      <p>
+        V októbri 2020 sa Banská Bystrica stala jedným z 56 miest na svete zapojených do prestížneho programu <strong>OGP Local</strong> (Open Government Partnership). Cieľom iniciatívy je podporovať <strong>transparentné, zodpovedné, participatívne a spolupracujúce vládnutie</strong> – tentokrát aj na miestnej úrovni.
+      </p>
+
+      <h3 class="text-2xl mt-4 font-semibold">Čo je Iniciatíva Partnerstva pre Otvorené vládnutie?</h3>
+      <p>
+        Ide o medzinárodnú iniciatívu, ktorá prepája reformátorov vo verejnej správe, občianske organizácie a občanov s cieľom budovať dôveryhodné a inkluzívne inštitúcie. Založená bola v roku 2011 z iniciatívy prezidenta USA Baracka Obamu.
+      </p>
+
+      <h3 class="text-2xl mt-4 font-semibold">Prečo zapájať aj samosprávy?</h3>
+      <p>
+        Miestne samosprávy majú priamy vplyv na každodenný život občanov. Ich zapojenie do OGP Local posilňuje transparentnosť, spoluprácu a dôveru medzi občanmi a mestom. Iniciatíva prichádza v čase, keď čelíme komplexným výzvam – ako bola pandémia – a potreba partnerstiev je kľúčová.
+      </p>
+
+      <h3 class="text-2xl mt-4 font-semibold">Ako sa zapojila Banská Bystrica?</h3>
+      <p>
+        Po konzultáciách počas konferencie ÚSV ROS v lete 2020 sa mesto rozhodlo podať prihlášku. Po úspešnom 2-kolovom výbere sa mesto stalo súčasťou OGP Local.
+      </p>
+
+      <h3 class="text-2xl mt-4 font-semibold">Tri fázy projektu OGP Local</h3>
+
+      <ol class="list-decimal list-inside space-y-2">
+        <li>
+          <strong>Prípravná fáza (jan – mar 2021):</strong> úvodné školenia, webináre a budovanie partnerstiev s občanmi.
+        </li>
+        <li>
+          <strong>Tvorba akčného plánu (mar – aug 2021):</strong> participatívny proces s verejnosťou a odborníkmi.
+        </li>
+        <li>
+          <strong>Implementácia a hodnotenie (sep 2021 – koniec 2022):</strong> uvedenie do praxe, zber skúseností a spätná väzba.
+        </li>
+      </ol>
+
+      <h3 class="text-2xl mt-8 font-semibold">Súvisiace podujatia</h3>
+      <ul class="list-disc list-inside text-blue-600">
+        <li>
+          <a href="/events/ogp-prve-stretnutie">1. podujatie – Úvodný dialóg a predstavenie platformy (11. 3. 2021)</a>
+        </li>
+        <li>
+          <a href="/events/ogp-druhe-stretnutie">2. podujatie – Úlohy skupiny Jadro+ a návrh oblastí (31. 3. 2021)</a>
+        </li>
+      </ul>
+
+      <h3 class="text-2xl mt-8 font-semibold">Akčný plán</h3>
+      <p>
+        Výsledkom participatívneho procesu je <strong>Akčný plán otvoreného vládnutia pre Banskú Bystricu</strong>.
+      </p>
+    </div>
+  </section>
+</Layout>

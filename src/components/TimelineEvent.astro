@@ -1,51 +1,47 @@
 ---
 import { EventTypes } from "./types/EventTypes";
 
-const { name, date, description, type, link, project, edition } = Astro.props as {
+const { name, date, description, type, link, project, project_link, edition } = Astro.props as {
   name: string;
   date: string;
   link: string;
   edition: number;
   project: string;
+  project_link: string;
   description: string;
   type: EventTypes; // Ensure type is explicitly an EventTypes value
 };
 
-const full_route = "/events/" + link;
+const full_event_route = "/events/" + link;
+const project_route = "/projects/" + project_link;
+
+
 
 // Map event colors based on the values in EventTypes
-const colorMap: Record<string, { bg: string; ring: string; icon: string, text:string }> = {
+const colorMap: Record<string, { bg: string; ring: string; icon: string }> = {
   Workshop: {
     bg: "bg-blue-100 dark:bg-blue-900",
     ring: "ring-white dark:ring-gray-900",
-    icon: "text-blue-700 dark:text-blue-300",
-    text: "text-blue-400 dark:text-blue-400",
-  },
+    icon: "text-blue-700 dark:text-blue-300",  },
   Discussion: {
-    bg: "bg-green-100 dark:bg-green-900",
+    bg: "bg-green-200 dark:bg-green-900",
     ring: "ring-white dark:ring-gray-900",
     icon: "text-green-700 dark:text-green-400",
-    text: "text-green-400 dark:text-green-400",
-
   },
   Conference: {
     bg: "bg-amber-100 dark:bg-amber-900",
     ring: "ring-white dark:ring-gray-900",
     icon: "text-amber-700 dark:text-amber-400",
-    text: "text-amber-400 dark:text-amber-400",
-
   },
   default: {
     bg: "bg-gray-100 dark:bg-gray-700",
     ring: "ring-white dark:ring-gray-900",
     icon: "text-gray-700 dark:text-gray-300",
-    text: "text-gray-100 dark:text-gray-300",
-
   },
 };
 
 // Get colors for the current event type or fall back to default
-const { bg, ring, icon, text } = colorMap[type] || colorMap.default;
+const { bg, ring, icon } = colorMap[type] || colorMap.default;
 ---
 
 <li class="mb-10 ms-6">
@@ -65,7 +61,7 @@ const { bg, ring, icon, text } = colorMap[type] || colorMap.default;
     </svg>
   </span>
 
-  <a href={full_route}>
+  <a href={full_event_route}>
       <h3
         class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white"
       >
@@ -77,8 +73,8 @@ const { bg, ring, icon, text } = colorMap[type] || colorMap.default;
     >{date}</time
   >
   <p
-    class={`"block mb-2 text-sm font-normal leading-none ${text}`}
-    ><a href="/dialogues">{project}</a> #{edition}</p
+    class={`"block mb-2 text-sm font-normal leading-none text-blue-400 dark:text-blue-400`}
+    ><a href={project_route}>{project}</a>#{edition}</p
   >
   <p class="text-base font-normal text-gray-500 dark:text-gray-400">
     {description}

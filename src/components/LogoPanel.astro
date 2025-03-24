@@ -5,14 +5,16 @@ const logos = [
   { src: "/logos/europska-komisia.png", alt: "Europska Komisia", url: "https://commission.europa.eu/index_sk" },
   { src: "/logos/oecd.png", alt: "OECD", url: "https://www.oecd.org/" },
   { src: "/logos/spolupracovna.jpg", alt: "Spolupracovna", url: "https://www.banskabystrica.sk/spolupracovna/" },
-  { src: "/logos/urbact.png", alt: "Urbact", url: "https://archive.urbact.eu/urbact-slovenska-republika" }
+  { src: "/logos/urbact.png", alt: "Urbact", url: "https://archive.urbact.eu/urbact-slovenska-republika" },
+  { src: "/logos/banska-bystrica.png", alt: "Mesto Banska Bystrica", url: "https://www.banskabystrica.sk/ " }
+
 ];
 ---
 
-<div class="h-fit flex justify-around items-center py-4 gap-5 flex-wrap grayscale-25">
+<div class="h-fit flex overflow-clip justify-around items-center py-4 gap-5 grayscale-25">
   {logos.map((logo) => (
     <a href={logo.url} target="_blank" rel="noopener noreferrer">
-      <img src={logo.src} alt={logo.alt} class="h-24 opacity-40 hover:opacity-100" />
+      <img src={logo.src} alt={logo.alt} class="h-18 opacity-40 hover:opacity-100" />
     </a>
   ))}
 </div>

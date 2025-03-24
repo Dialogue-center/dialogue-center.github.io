@@ -1,0 +1,46 @@
+---
+import { changeLanguage } from "i18next";
+import Gallery from "@/components/Gallery.astro";
+import Layout from "../../layouts/Layout.astro";
+import "../../styles/global.css";
+---
+
+<Layout title="Dialogue center">
+  <section class="flex flex-col items-center gap-4 mb-8">
+    <div class="w-fit flex flex-col gap-5 md:max-w-1/2 md:mx-2">
+      <h2 class="text-4xl font-semibold mt-8">Spolupracovňa</h2>
+      <p class="">
+        Mestská SPOLUpracovňa je otvorený priestor v Banskej Bystrici, kde sa
+        stretávajú obyvatelia, odborníci a zástupcovia mesta, aby spoločne
+        diskutovali o aktuálnych témach, problémoch aj nápadoch na zlepšenie
+        života v meste. Vznikla ako súčasť Iniciatívy pre otvorené vládnutie s
+        cieľom podporiť rovnocenný dialóg, spoluprácu a kolektívnu inteligenciu,
+        ktorá prispieva k rozvoju kvalitných verejných služieb a priateľskejšej
+        samosprávy.
+      </p>
+      <p>Viac o projekte: <a class="font-medium text-blue-600 dark:text-blue-500 hover:underline" href="https://www.banskabystrica.sk/spolupracovna/">Spolupracovňa</a></p>
+    </div>
+    <div class="min-w-1/2">
+        <h2 class="text-lg font-semibold">Relevatné odkazy:</h2>
+        <h2 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white"></h2>
+        <ul
+          class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400"
+        >
+          <li>
+            <a
+              href="https://docs.google.com/document/d/1BNE-REkjGbadbw0CPAMreVJRtRk32DRceLJeQ6Vhso0/edit#"
+              class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+              >Koncept SPOLUpracovňa Banská Bystrica</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://docs.google.com/spreadsheets/d/1-XnGCkWw_xPSphv74DCLBhZr-N0mpJCkFgln-BJoQ90/edit?usp=sharing"
+              class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+              >Členovia Rady SPOLUpracovne</a
+            >
+          </li>
+        </ul>
+      </div>
+  </section>
+</Layout>

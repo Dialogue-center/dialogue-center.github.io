@@ -32,6 +32,7 @@ const events = await Astro.glob("../content/events/**/*.md");
                 description={event.frontmatter.description}
                 type={event.frontmatter.type}
                 project={event.frontmatter.project}
+                project_link={event.frontmatter.project_link}
                 edition={event.frontmatter.edition}
                 link={event.frontmatter.slug}
               />

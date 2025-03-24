@@ -4,24 +4,33 @@ const { photo, name, responsibilities, email } = Astro.props;
 
 <article
   id="team_member"
-  class="flex md:max-w-1/2 md:mx-auto m-5 dark:text-white dark:bg-gray-900 rounded-xl p-2"
+  class="flex md:max-w-1/2 md:mx-auto m-5 text-gray-600 dark:text-white dark:bg-gray-900 rounded-xl bg-[rgb(45, 159, 110)]"
 >
   <picture class="min-w-1/4">
     <img
       src={photo}
       alt="portrait"
-      class="w-[300px] h-[300px] object-cover object-top rounded-xl shadow-md grayscale"
+      class="w-[300px] h-full object-cover object-top rounded-l-xl  grayscale"
     />
   </picture>
-  <div id="name_card" class="flex flex-col gap-4 pl-10">
+  <div id="name_card" class="flex flex-col gap-4 m-6">
     <header>
-      <h1 class="font-medium text-2xl underline underline-offset-2">{name}</h1>
+      <h1 class="font-medium  md:text-3xl text-gray-700 underline-offset-2">
+        {name}
+      </h1>
     </header>
     <p class="font-normal grow">{responsibilities}</p>
     <address
-      class="text-xl text-white not-italic mt-auto font-medium rounded-sm w-fit p-2 shadow-md bg-blue-400"
+      class="text-lg italic mt-auto font-medium rounded-sm w-fit py-2 underline underline-offset-4 hover:text-emerald-600"
     >
       {email}
     </address>
   </div>
 </article>
+
+<style>
+  article{
+    background-color: rgba(53, 188, 129, 0.808);
+    background: linear-gradient(90deg, rgba(53,188,129,0.3) 0%, rgba(53,188,129,0.4500000683867297) 50%, rgba(2,0,36,0) 100%);     }
+</style>
+

@@ -1,0 +1,82 @@
+---
+import { changeLanguage } from "i18next";
+import Gallery from "@/components/Gallery.astro";
+import Layout from "../../layouts/Layout.astro";
+import "../../styles/global.css";
+
+changeLanguage("sk");
+---
+
+<Layout title="Dialogue centre">
+  <section class="flex flex-col items-center gap-4 mb-8">
+    <div class="w-fit flex flex-col gap-5 md:max-w-1/2 md:mx-2">
+      <h2 class="font-semibold text-3xl mt-8">Iniciatíva Partnerstva pre Otvorené vládnutie na miestnej úrovni</h2>
+      <p>
+        V októbri 2020 sa Banská Bystrica stala jedným z 56 miest na svete zapojených do prestížneho programu <strong>OGP Local</strong> (Open Government Partnership). Cieľom iniciatívy je podporovať <strong>transparentné, zodpovedné, participatívne a spolupracujúce vládnutie</strong> – tentokrát aj na miestnej úrovni.
+      </p>
+      <p>
+        Projekt je súčasťou medzinárodnej iniciatívy, ktorú od roku 2011 zastrešuje OGP a podporuje aj slovenská vláda cez Úrad splnomocnenca pre rozvoj občianskej spoločnosti. Mesto Banská Bystrica sa tak zaradilo medzi progresívne samosprávy s cieľom rozvíjať kultúru otvorenosti a zvyšovať zapojenie verejnosti do tvorby verejných politík.
+      </p>
+
+      <h2 class="text-2xl mt-8 font-semibold">🕒 Časová os projektu</h2>
+      <div class="border-l-2 border-blue-500 pl-4 mt-4 space-y-6">
+        <div>
+          <p class="text-sm text-gray-400">Leto 2020</p>
+          <p><strong>Výzva OGP Local</strong> – zapojenie mesta Banská Bystrica do medzinárodnej iniciatívy</p>
+        </div>
+        <div>
+          <p class="text-sm text-gray-400">Október 2020</p>
+          <p><strong>Oficiálny výber medzi 56 miest sveta</strong> zapojených do programu OGP Local</p>
+        </div>
+        <div>
+          <p class="text-sm text-gray-400">Január – Marec 2021</p>
+          <p><strong>Úvodná fáza:</strong> školenia, orientácia, sieťovanie, prípravné rozhovory</p>
+        </div>
+        <div>
+          <p class="text-sm text-gray-400">Marec – August 2021</p>
+          <p><strong>Tvorba Akčného plánu otvoreného vládnutia</strong> – dialógy, konzultácie, participácia</p>
+        </div>
+        <div>
+          <p class="text-sm text-gray-400">September 2021 – December 2022</p>
+          <p><strong>Implementácia akčného plánu</strong> a vyhodnotenie jeho dopadu na mestské procesy</p>
+        </div>
+      </div>
+
+      <h2 class="text-3xl mt-8">Relevatné odkazy</h2>
+    </div>
+
+    <div class="min-w-1/2">
+      <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+        <li>
+            <a
+              href="./open_goverment_partnership_details"
+              class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+              >Detailný opis projektu</a
+            >
+          </li>
+          
+        <li>
+          <a
+            href="https://www.opengovpartnership.org"
+            class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+            >Oficiálna stránka Open Government Partnership</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.banskabystrica.sk/samosprava/otvorena-samosprava-ogp-local/"
+            class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+            >Otvorená samospráva – Banská Bystrica</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.minv.sk/?ros"
+            class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+            >Úrad splnomocnenca vlády SR pre rozvoj občianskej spoločnosti</a
+          >
+        </li>
+      </ul>
+    </div>
+  </section>
+</Layout>
