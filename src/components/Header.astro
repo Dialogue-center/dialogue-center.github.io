@@ -3,107 +3,196 @@ const pathname = new URL(Astro.request.url).pathname;
 const currentPath = pathname.slice(1); 
 ---
 
-<header>
-  <nav
-    class="bg-white dark:bg-gray-900 sticky w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600"
-  >
-    <div
-      class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
-    >
-      <a href="/" class="flex items-center space-x-3 ">
-        <img src="/logos/dialogue_centre_logo.svg" class="h-10" alt="Flowbite Logo" />
-      </a>
-      <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-        <a href="/contact_us"
-          ><button
-            type="button"
-            class="text-white bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-            >Kontaktuje nás</button
-          ></a
-        >
-        <button
-          data-collapse-toggle="navbar-sticky"
-          type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-          aria-controls="navbar-sticky"
-          aria-expanded="false"
-        >
-          <span class="sr-only">Open main menu</span>
-          <svg
-            class="w-5 h-5"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 17 14"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M1 1h15M1 7h15M1 13h15"></path>
-          </svg>
-        </button>
-      </div>
-      <div
-        class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-        id="navbar-sticky"
-      >
-        <ul
-          class="flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
-        >
-          <li>
-            <a
-              href="/"
-              class:list={currentPath === "" ? "active" : ""}
-              class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-              aria-current="page">Domov</a
+<header class="w-full sticky top-0 z-30">
+  <!-- Top gradient line -->
+  <div class="h-1 bg-gradient-to-r from-emerald-500 via-blue-500 to-[#102756]"></div>
+  
+  <nav class="bg-white dark:bg-gray-900 border-b border-gray-100 dark:border-gray-800 shadow-sm">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <!-- Logo and primary navigation -->
+        <div class="flex">
+          <!-- Logo -->
+          <div class="flex-shrink-0 flex items-center">
+            <a href="/" class="flex items-center">
+              <img src="/logos/dialogue_centre_logo.svg" class="h-10 w-auto" alt="Dialogue Centre Logo" />
+            </a>
+          </div>
+          
+          <!-- Desktop Navigation -->
+          <div class="hidden md:ml-8 md:flex md:items-center md:space-x-4">
+            <a 
+              href="/" 
+              class:list={[
+                "px-3 py-2 text-sm font-medium transition-colors duration-200",
+                currentPath === "" 
+                  ? "text-blue-700 dark:text-blue-400 border-b-2 border-blue-500" 
+                  : "text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+              ]}
             >
-          </li>
-          <li>
-            <a
-              href="/event_timeline"
-              class:list={currentPath === "event_timeline" ? "active" : ""}
-              class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-              aria-current="page">Udalosti</a
+              Domov
+            </a>
+            
+            <a 
+              href="/event_timeline" 
+              class:list={[
+                "px-3 py-2 text-sm font-medium transition-colors duration-200",
+                currentPath === "event_timeline" 
+                  ? "text-blue-700 dark:text-blue-400 border-b-2 border-blue-500" 
+                  : "text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+              ]}
             >
-          </li>
-          <li>
-            <a
-              href="/projects"
-              class:list={currentPath === "projects" ? "active" : ""}
-              class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-              >Projekty</a
+              Udalosti
+            </a>
+            
+            <a 
+              href="/projects" 
+              class:list={[
+                "px-3 py-2 text-sm font-medium transition-colors duration-200",
+                currentPath === "projects" 
+                  ? "text-blue-700 dark:text-blue-400 border-b-2 border-blue-500" 
+                  : "text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+              ]}
             >
-          </li>
-          <li>
-            <a
-              href="/team"
-              class:list={currentPath === "team" ? "active" : ""}
-              class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-              >Náš tím</a
+              Projekty
+            </a>
+            
+            <a 
+              href="/team" 
+              class:list={[
+                "px-3 py-2 text-sm font-medium transition-colors duration-200",
+                currentPath === "team" 
+                  ? "text-blue-700 dark:text-blue-400 border-b-2 border-blue-500" 
+                  : "text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+              ]}
             >
-          </li>
-          <li>
-            <a
+              Náš tím
+            </a>
+            
+            <a 
+              href="/contact_us" 
+              class:list={[
+                "px-3 py-2 text-sm font-medium transition-colors duration-200",
+                currentPath === "contact_us" 
+                  ? "text-blue-700 dark:text-blue-400 border-b-2 border-blue-500" 
+                  : "text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+              ]}
+            >
+              Kontakt
+            </a>
+          </div>
+        </div>
+        
+        <!-- Contact button and mobile menu button -->
+        <div class="flex items-center">
+          <!-- Contact button -->
+          <div class="hidden md:flex items-center">
+            <a 
               href="/contact_us"
-              class:list={currentPath === "contact_us" ? "active" : ""}
-              class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-              >Kontakt</a
+              class="ml-6 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-all duration-200"
             >
-          </li>
-        </ul>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+              </svg>
+              Kontaktujte nás
+            </a>
+          </div>
+          
+          <!-- Mobile menu button -->
+          <div class="flex md:hidden">
+            <button 
+              type="button" 
+              class="inline-flex items-center justify-center p-2 rounded-md text-gray-500 hover:text-blue-600 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-blue-400 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500 transition-colors duration-200"
+              aria-controls="navbar-mobile"
+              aria-expanded="false"
+              data-collapse-toggle="navbar-mobile"
+            >
+              <span class="sr-only">Otvoriť hlavné menu</span>
+              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Mobile menu, show/hide based on menu state -->
+    <div class="hidden md:hidden bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700" id="navbar-mobile">
+      <div class="px-2 pt-2 pb-3 space-y-1">
+        <a 
+          href="/" 
+          class:list={[
+            "block px-3 py-2 rounded-md text-base font-medium",
+            currentPath === "" 
+              ? "bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400" 
+              : "text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-blue-600 dark:hover:text-blue-400"
+          ]}
+        >
+          Domov
+        </a>
+        
+        <a 
+          href="/event_timeline" 
+          class:list={[
+            "block px-3 py-2 rounded-md text-base font-medium",
+            currentPath === "event_timeline" 
+              ? "bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400" 
+              : "text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-blue-600 dark:hover:text-blue-400"
+          ]}
+        >
+          Udalosti
+        </a>
+        
+        <a 
+          href="/projects" 
+          class:list={[
+            "block px-3 py-2 rounded-md text-base font-medium",
+            currentPath === "projects" 
+              ? "bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400" 
+              : "text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-blue-600 dark:hover:text-blue-400"
+          ]}
+        >
+          Projekty
+        </a>
+        
+        <a 
+          href="/team" 
+          class:list={[
+            "block px-3 py-2 rounded-md text-base font-medium",
+            currentPath === "team" 
+              ? "bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400" 
+              : "text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-blue-600 dark:hover:text-blue-400"
+          ]}
+        >
+          Náš tím
+        </a>
+        
+        <a 
+          href="/contact_us" 
+          class:list={[
+            "block px-3 py-2 rounded-md text-base font-medium",
+            currentPath === "contact_us" 
+              ? "bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400" 
+              : "text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-blue-600 dark:hover:text-blue-400"
+          ]}
+        >
+          Kontakt
+        </a>
+        
+        <!-- Mobile contact button -->
+        <div class="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
+          <a 
+            href="/contact_us"
+            class="w-full flex items-center justify-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+            </svg>
+            Kontaktujte nás
+          </a>
+        </div>
       </div>
     </div>
   </nav>
 </header>
-
-<style>
-  .active {
-    @media (width >= 48rem /* 768px */) {
-      color: var(--color-blue-700);
-      text-decoration: underline;
-       /* oklch(0.488 0.243 264.376) = #1447e6 */;
-    }
-  }
-</style>
