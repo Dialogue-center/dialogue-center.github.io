@@ -1,116 +1,172 @@
 ---
-
 ---
 
-<div class=" py-12 mx-5">
-  <div id="text-carousel" class="relative w-full max-w-4xl mx-auto mt-12" data-carousel="manual">
-      <!-- Carousel Wrapper -->
-      <div class="relative h-80 md:h-96 lg:h-[28rem] flex items-center justify-center overflow-clip rounded-lg shadow-lg bg-gray-100">
-          
-          <!-- Slide 1 (Active) -->
-          <div class="absolute inset-0 flex flex-row items-center bg-white rounded-lg h-full w-full opacity-100 transition-opacity duration-700 ease-in-out shadow-md" data-carousel-item="active">
-              <!-- Image (Left Side) -->
-              <div class="w-1/2 h-full">
-                  <img src="/logos/banska_bystrica.jpg" alt="Banská Bystrica" class="h-full w-full object-cover rounded-l-lg">
-              </div>
-              <!-- Text (Right Side) -->
-              <div class="w-1/2 flex flex-col justify-center items-start p-8 bg-blue-300 text-white rounded-r-lg">
-                  <h2 class="text-lg md:text-3xl font-bold">Program rozvoja bývania 2035</h2>
-                  <p class="mt-4 text-sm md:text-lg">
-                      Pomohli sme vytvoriť Program rozvoja bývania 2035 pre Mesto Banská Bystrica.
-                  </p>
-                  <a href="projects/hoodlam_revitalization" class="mt-6 text-white underline hover:opacity-80 transition">
-                      Zistite viac
-                  </a>
-              </div>
-          </div>
-
-          <!-- Slide 2 -->
-          <div class="absolute inset-0 hidden flex flex-row items-center bg-white rounded-lg h-full w-full opacity-0 transition-opacity duration-700 ease-in-out shadow-md" data-carousel-item>
-              <!-- Image (Left Side) -->
-              <div class="w-1/2 h-full">
-                  <img src="https://storage.googleapis.com/dialogue-center/fotky%20agenti_%20/2023/Medzin%C3%A1rodn%C3%A9%20stretnutia/Genk-Breda/PXL_20231115_152950258.jpg" alt="Banská Bystrica" class="h-full w-full object-cover rounded-l-lg">
-              </div>
-              <!-- Text (Right Side) -->
-              <div class="w-1/2 flex flex-col justify-center items-start p-8 bg-blue-300 text-white rounded-r-lg">
-                  <h2 class="text-lg md:text-3xl font-bold">Agenti koexistencie</h2>
-                  <p class="mt-4 text-sm md:text-lg">
-                    Podporujeme inovatívne prístupy k verejnej správe a inkluzívnej tvorbe politík prostredníctvom medzinárodnej siete Agenti Koexistencie
-                  </p>
-                  <a href="/projects/agents" class="mt-6 text-white underline hover:opacity-80 transition">
-                      Zistite viac
-                  </a>
-              </div>
-          </div>
-
-          <!-- Slide 3 -->
-          <div class="absolute inset-0 hidden flex flex-row items-center bg-white rounded-lg h-full w-full opacity-0 transition-opacity duration-700 ease-in-out shadow-md" data-carousel-item>
-              <!-- Image (Left Side) -->
-              <div class="w-1/2 h-full">
-                  <img src="/logos/zelene-sidliska.jpg" alt="Banská Bystrica" class="h-full w-full object-cover rounded-l-lg">
-              </div>
-              <!-- Text (Right Side) -->
-              <div class="w-1/2 flex flex-col justify-center items-start p-8 bg-blue-300 text-white rounded-r-lg">
-                  <h2 class="text-lg md:text-3xl font-bold">Zelené sídliská</h2>
-                  <p class="mt-4 text-sm md:text-lg overflow-hidden">
-                    Zastrešovali sme participatívny proces pre mesto Banská Bystrica do novembra 2021, organizovali verejné diskusie a prieskumy s obyvateľmi, ktoré slúžili ako podklad pre návrhy architektov a plánovanie verejných priestorov.
-                  </p>
-                  <a href="projects/green_oasis_neighbourhood" class="mt-6 text-white underline hover:opacity-80 transition">
-                      Zistite viac
-                  </a>
-              </div>
-          </div>
-      </div>
-
-
-      <!-- Navigation Arrows (Outside) -->
-      <button id="carousel-prev" type="button" class="absolute top-1/2 left-0 transform -translate-y-1/2 z-30 flex items-center bg-blue-200 justify-center h-10 w-10 text-white rounded-full opacity-60 hover:opacity-100 transition duration-300 focus:outline-none">
-          ❮
-      </button>
-      <button id="carousel-next" type="button" class="absolute top-1/2 right-0 transform -translate-y-1/2 z-30 flex items-center bg-blue-200 justify-center h-10 w-10 text-white rounded-full opacity-60 hover:opacity-100 transition duration-300 focus:outline-none">
-          ❯
-      </button>
+<div class="py-12 mx-5">
+    <div id="text-carousel" class="relative w-full max-w-5xl mx-auto mt-12" data-carousel="manual">
+        <!-- Carousel Wrapper -->
+        <div class="relative h-80 md:h-96 lg:h-[28rem] flex items-center justify-center overflow-hidden rounded-xl shadow-lg">
+            
+            <!-- Slide 1 (Active) -->
+            <div class="absolute inset-0 flex flex-col md:flex-row items-center bg-white dark:bg-gray-800 rounded-xl h-full w-full opacity-100 transition-all duration-700 ease-in-out shadow-md" data-carousel-item="active">
+                <!-- Image (Left Side on Desktop, Top on Mobile) -->
+                <div class="w-full md:w-1/2 h-1/2 md:h-full relative">
+                    <img src="/logos/banska_bystrica.jpg" alt="Banská Bystrica" class="h-full w-full object-cover md:rounded-l-xl">
+                    <div class="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-black/10 to-transparent"></div>
+                </div>
+                <!-- Text (Right Side on Desktop, Bottom on Mobile) -->
+                <div class="w-full md:w-1/2 flex flex-col justify-center items-start p-6 md:p-8 bg-gradient-to-r from-blue-300 to-blue-200 dark:from-blue-800 dark:to-blue-700 text-blue-800 dark:text-white md:rounded-r-xl h-1/2 md:h-full">
+                    <h2 class="text-xl md:text-3xl font-bold text-blue-900 dark:text-white">Program rozvoja bývania 2035</h2>
+                    <p class="mt-3 md:mt-4 text-sm md:text-base text-blue-700 dark:text-blue-100">
+                        Pomohli sme vytvoriť Program rozvoja bývania 2035 pre Mesto Banská Bystrica.
+                    </p>
+                    <a href="projects/hoodlam_revitalization" class="mt-4 md:mt-6 inline-flex items-center text-blue-700 dark:text-white hover:underline group">
+                        Zistite viac
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+  
+            <!-- Slide 2 -->
+            <div class="absolute inset-0 hidden flex flex-col md:flex-row items-center bg-white dark:bg-gray-800 rounded-xl h-full w-full opacity-0 transition-all duration-700 ease-in-out shadow-md" data-carousel-item>
+                <!-- Image (Left Side on Desktop, Top on Mobile) -->
+                <div class="w-full md:w-1/2 h-1/2 md:h-full relative">
+                    <img src="https://storage.googleapis.com/dialogue-center/fotky%20agenti_%20/2023/Medzin%C3%A1rodn%C3%A9%20stretnutia/Genk-Breda/PXL_20231115_152950258.jpg" alt="Agenti koexistencie" class="h-full w-full object-cover md:rounded-l-xl">
+                    <div class="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-black/10 to-transparent"></div>
+                </div>
+                <!-- Text (Right Side on Desktop, Bottom on Mobile) -->
+                <div class="w-full md:w-1/2 flex flex-col justify-center items-start p-6 md:p-8 bg-gradient-to-r from-blue-300 to-blue-200 dark:from-blue-800 dark:to-blue-700 text-blue-800 dark:text-white md:rounded-r-xl h-1/2 md:h-full">
+                    <h2 class="text-xl md:text-3xl font-bold text-blue-900 dark:text-white">Agenti koexistencie</h2>
+                    <p class="mt-3 md:mt-4 text-sm md:text-base text-blue-700 dark:text-blue-100">
+                      Podporujeme inovatívne prístupy k verejnej správe a inkluzívnej tvorbe politík prostredníctvom medzinárodnej siete Agenti Koexistencie
+                    </p>
+                    <a href="/projects/agents" class="mt-4 md:mt-6 inline-flex items-center text-blue-700 dark:text-white hover:underline group">
+                        Zistite viac
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+  
+            <!-- Slide 3 -->
+            <div class="absolute inset-0 hidden flex flex-col md:flex-row items-center bg-white dark:bg-gray-800 rounded-xl h-full w-full opacity-0 transition-all duration-700 ease-in-out shadow-md" data-carousel-item>
+                <!-- Image (Left Side on Desktop, Top on Mobile) -->
+                <div class="w-full md:w-1/2 h-1/2 md:h-full relative">
+                    <img src="/logos/zelene-sidliska.jpg" alt="Zelené sídliská" class="h-full w-full object-cover md:rounded-l-xl">
+                    <div class="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-black/10 to-transparent"></div>
+                </div>
+                <!-- Text (Right Side on Desktop, Bottom on Mobile) -->
+                <div class="w-full md:w-1/2 flex flex-col justify-center items-start p-6 md:p-8 bg-gradient-to-r from-blue-300 to-blue-200 dark:from-blue-800 dark:to-blue-700 text-blue-800 dark:text-white md:rounded-r-xl h-1/2 md:h-full">
+                    <h2 class="text-xl md:text-3xl font-bold text-blue-900 dark:text-white">Zelené sídliská</h2>
+                    <p class="mt-3 md:mt-4 text-sm md:text-base text-blue-700 dark:text-blue-100 line-clamp-4 md:line-clamp-none">
+                      Zastrešovali sme participatívny proces pre mesto Banská Bystrica do novembra 2021, organizovali verejné diskusie a prieskumy s obyvateľmi, ktoré slúžili ako podklad pre návrhy architektov a plánovanie verejných priestorov.
+                    </p>
+                    <a href="projects/green_oasis_neighbourhood" class="mt-4 md:mt-6 inline-flex items-center text-blue-700 dark:text-white hover:underline group">
+                        Zistite viac
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+  
+        <!-- Slide Indicators -->
+        <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+            <button type="button" class="w-3 h-3 rounded-full bg-gray-700/50 hover:bg-gray-700 dark:bg-white/50 dark:hover:bg-white" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 rounded-full bg-gray-700/50 hover:bg-gray-700 dark:bg-white/50 dark:hover:bg-white" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 rounded-full bg-gray-700/50 hover:bg-gray-700 dark:bg-white/50 dark:hover:bg-white" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+        </div>
+  
+        <!-- Navigation Arrows -->
+        <button id="carousel-prev" type="button" class="absolute top-1/2 -left-4 md:left-2 transform -translate-y-1/2 z-30 flex items-center justify-center h-10 w-10 text-blue-800 dark:text-white bg-white/70 dark:bg-blue-600/70 hover:bg-white dark:hover:bg-blue-600 rounded-full shadow-md transition duration-300 focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+        </button>
+        <button id="carousel-next" type="button" class="absolute top-1/2 -right-4 md:right-2 transform -translate-y-1/2 z-30 flex items-center justify-center h-10 w-10 text-blue-800 dark:text-white bg-white/70 dark:bg-blue-600/70 hover:bg-white dark:hover:bg-blue-600 rounded-full shadow-md transition duration-300 focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+        </button>
+    </div>
   </div>
-</div>
-
-<!-- Manual Navigation JavaScript -->
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-      const carousel = document.getElementById("text-carousel");
-      if (!carousel) return;
-      const items = carousel.querySelectorAll("[data-carousel-item]");
-      const prevButton = document.getElementById("carousel-prev");
-      const nextButton = document.getElementById("carousel-next");
-      let currentIndex = 0;
-      const totalSlides = items.length;
-
-      function showSlide(index: number) {
-          items.forEach((item, i) => {
-              item.classList.add("hidden");
-              item.classList.remove("opacity-100");
-              item.classList.add("opacity-0");
-          });
-
-          items[index].classList.remove("hidden");
-          items[index].classList.add("opacity-100");
-          items[index].classList.remove("opacity-0");
-      }
-
-      // Manual Navigation Buttons
-      if (prevButton) {
-          prevButton.addEventListener("click", () => {
-              currentIndex = (currentIndex - 1 + totalSlides) % totalSlides; // Loop back to last
-              showSlide(currentIndex);
-          });
-      }
-
-      if (nextButton) {
-          nextButton.addEventListener("click", () => {
-              currentIndex = (currentIndex + 1) % totalSlides; // Loop back to first
-              showSlide(currentIndex);
-          });
-      }
-
-      showSlide(currentIndex); // Show first slide initially
-  });
-</script>
+  
+  <!-- Manual Navigation JavaScript -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const carousel = document.getElementById("text-carousel");
+        if (!carousel) return;
+        const items = carousel.querySelectorAll("[data-carousel-item]");
+        const prevButton = document.getElementById("carousel-prev");
+        const nextButton = document.getElementById("carousel-next");
+        const indicators = carousel.querySelectorAll("[data-carousel-slide-to]");
+        let currentIndex = 0;
+        const totalSlides = items.length;
+  
+        function showSlide(index:any) {
+            // Update slides
+            items.forEach((item, i) => {
+                item.classList.add("hidden");
+                item.classList.remove("opacity-100");
+                item.classList.add("opacity-0");
+            });
+  
+            items[index].classList.remove("hidden");
+            items[index].classList.add("opacity-100");
+            items[index].classList.remove("opacity-0");
+            
+            // Update indicators
+            indicators.forEach((indicator, i) => {
+                indicator.setAttribute("aria-current", i === index ? "true" : "false");
+                indicator.classList.toggle("bg-gray-700", i === index); // Darker indicator for active slide
+                indicator.classList.toggle("dark:bg-white", i === index);
+                indicator.classList.toggle("bg-gray-700/50", i !== index);
+                indicator.classList.toggle("dark:bg-white/50", i !== index);
+            });
+        }
+  
+        // Manual Navigation Buttons
+        if (prevButton) {
+            prevButton.addEventListener("click", () => {
+                currentIndex = (currentIndex - 1 + totalSlides) % totalSlides; // Loop back to last
+                showSlide(currentIndex);
+            });
+        }
+  
+        if (nextButton) {
+            nextButton.addEventListener("click", () => {
+                currentIndex = (currentIndex + 1) % totalSlides; // Loop back to first
+                showSlide(currentIndex);
+            });
+        }
+        
+        // Indicator buttons
+        indicators.forEach((indicator, i) => {
+            indicator.addEventListener("click", () => {
+                currentIndex = i;
+                showSlide(currentIndex);
+            });
+        });
+  
+        showSlide(currentIndex); // Show first slide initially
+        
+        // Auto-advance slides every 6 seconds
+        let autoAdvanceInterval = setInterval(() => {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            showSlide(currentIndex);
+        }, 6000);
+  
+        // Pause auto-advance on hover (optional)
+        carousel.addEventListener('mouseenter', () => clearInterval(autoAdvanceInterval));
+        carousel.addEventListener('mouseleave', () => {
+            autoAdvanceInterval = setInterval(() => {
+                currentIndex = (currentIndex + 1) % totalSlides;
+                showSlide(currentIndex);
+            }, 6000);
+        });
+    });
+  </script>
+  
