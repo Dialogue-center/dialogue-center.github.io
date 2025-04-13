@@ -8,18 +8,18 @@ import LogoPanel from "./LogoPanel.astro";
 
   <!-- Main Footer -->
   <div class="bg-gradient-to-r from-[#102756] via-[#1f5cab] to-[#2878de] py-8 px-6 md:px-12">
-    <div class="max-w-6xl mx-auto">
+    <div class="max-w-3/4 lg:max-w-3/5 md:mx-auto">
       <!-- Contact Section -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+      <div class="flex flex-col items-center md:flex-row justify-between gap-8 mb-8">
         <!-- Left Column - Contact Info -->
         <div class="space-y-6">
           <h3 class="text-white text-xl font-semibold mb-4 border-l-4 border-emerald-400 pl-3">
             Kontaktujte nás
           </h3>
-          
+
           <!-- Email -->
-          <a 
-            href="mailto:dialoguecentre13@gmail.com" 
+          <a
+            href="mailto:dialoguecentre13@gmail.com"
             class="flex items-center group hover:translate-x-1 transition-transform duration-300"
           >
             <div class="bg-white/10 p-2 rounded-lg mr-4 group-hover:bg-emerald-500/20 transition-colors">
@@ -32,10 +32,10 @@ import LogoPanel from "./LogoPanel.astro";
               <p class="text-white font-medium">dialoguecentre13@gmail.com</p>
             </div>
           </a>
-          
+
           <!-- Phone -->
-          <a 
-            href="tel:+421908358915" 
+          <a
+            href="tel:+421908358915"
             class="flex items-center group hover:translate-x-1 transition-transform duration-300"
             id="phone-link"
           >
@@ -50,17 +50,17 @@ import LogoPanel from "./LogoPanel.astro";
             </div>
           </a>
         </div>
-        
+
         <!-- Right Column - Social Media -->
-        <div class="space-y-6">
+        <div class="space-y-6 items-end">
           <h3 class="text-white text-xl font-semibold mb-4 border-l-4 border-emerald-400 pl-3">
             Spojte sa s nami
           </h3>
-          
+
           <!-- Facebook -->
-          <a 
-            href="https://www.facebook.com/UKCEEDialogueCentre" 
-            target="_blank" 
+          <a
+            href="https://www.facebook.com/UKCEEDialogueCentre"
+            target="_blank"
             rel="noopener noreferrer"
             class="flex items-center group hover:translate-x-1 transition-transform duration-300"
           >
@@ -77,7 +77,7 @@ import LogoPanel from "./LogoPanel.astro";
               <p class="text-gray-300 text-sm">@UKCEEDialogueCentre</p>
             </div>
           </a>
-          
+
           <!-- Address (Optional) -->
           <div class="flex items-center mt-6">
             <div class="bg-white/10 p-2 rounded-lg mr-4">
@@ -93,10 +93,10 @@ import LogoPanel from "./LogoPanel.astro";
           </div>
         </div>
       </div>
-      
+
       <!-- Divider -->
       <div class="h-px bg-gradient-to-r from-transparent via-white/20 to-transparent my-6"></div>
-      
+
       <!-- Bottom Section -->
       <div class="flex flex-col md:flex-row justify-between items-center text-white/70 text-sm">
         <div class="mb-4 md:mb-0">
@@ -126,12 +126,12 @@ import LogoPanel from "./LogoPanel.astro";
             tooltip.className = 'fixed bg-emerald-700 text-white py-2 px-4 rounded-lg shadow-lg z-50 text-sm';
             tooltip.style.transition = 'opacity 0.5s';
             document.body.appendChild(tooltip);
-            
+
             // Position the tooltip near the phone element
             const rect = phoneLink.getBoundingClientRect();
             tooltip.style.top = `${rect.bottom + 10}px`;
             tooltip.style.left = `${rect.left + rect.width/2 - tooltip.offsetWidth/2}px`;
-            
+
             // Remove the tooltip after 2 seconds
             setTimeout(() => {
               tooltip.style.opacity = '0';

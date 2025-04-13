@@ -1,0 +1,105 @@
+---
+import { changeLanguage } from "i18next";
+import Gallery from "@/components/Gallery.astro";
+import Layout from "../../layouts/Layout.astro";
+import "../../styles/global.css";
+
+changeLanguage("sk");
+---
+
+<Layout title="Agenti Koexistencie - Workshopy | Dialogue Centre">
+  <section class="flex flex-col items-center gap-4 mb-8 md:max-w-1/2 md:mx-auto">
+    <div class="w-fit flex flex-col gap-5 md:mx-2">
+      <h2 class="font-semibold text-3xl mt-8">
+        Agenti Koexistencie - Workshopy o polarizácii
+      </h2>
+      <p>
+        Iniciatíva pre otvorené vládnutie v Banskej Bystrici úspešne
+        zrealizovala sériu troch workshopov na tému „Ako sa udržať v strede
+        alebo ako strategicky pracovať s <strong>polarizáciou</strong>“. Táto téma predstavuje
+        čoraz väčšiu výzvu, nakoľko polarizácia zvyšuje čierno-biele videnie,
+        podporuje uzatváranie sa do „bublín“ a zhoršuje verejný diskurz, čo
+        negatívne ovplyvňuje spoluprácu a konštruktívny dialóg v meste.
+      </p>
+      <p>
+        Workshopy boli súčasťou projektu <strong>Agenti Koexistencie</strong> v rámci programu
+        <strong>URBACT IV</strong>, zameraného na inovácie v spravovaní vecí verejných.
+        Realizovali sa v spolupráci s <strong>Dialogue Centre n.o.</strong> a Referátom pre
+        participáciu a inovácie MsÚ Banská Bystrica.
+      </p>
+
+      <h2 class="text-2xl mt-8 font-semibold">🕒 Priebeh pilotných workshopov (2024)</h2>
+      <div class="border-l-2 border-blue-500 pl-4 mt-4 space-y-6">
+        <div>
+          <p class="text-sm text-gray-400">3. Október 2024</p>
+          <p>
+            Workshop s <strong>volenými lídrami samosprávy</strong> a
+            <strong>mediálnym tímom MsÚ</strong> Banská Bystrica.
+          </p>
+        </div>
+        <div>
+          <p class="text-sm text-gray-400">28. November 2024</p>
+          <p>
+            Workshop s <strong>vedúcimi oddelení</strong> a
+            <strong>zamestnancami Mestského úradu</strong>.
+          </p>
+        </div>
+        <div>
+          <p class="text-sm text-gray-400">2. December 2024</p>
+          <p>
+            Workshop s <strong>angažovanými aktérmi občianskej spoločnosti</strong>.
+          </p>
+        </div>
+      </div>
+
+      <p class="mt-6"> {/* Added margin-top for spacing after timeline */}
+        Tieto skupiny majú kľúčovú úlohu v depolarizácii a môžu svojím
+        príkladom inšpirovať aj ostatných. Veríme, že účastníci získali hlbšie
+        porozumenie polarizácie, praktické stratégie na jej elimináciu a
+        bezpečný priestor na zdieľanie skúseností.
+      </p>
+      <p>
+        Workshopy vnímame ako viac než len vzdelávacie podujatia – sú cestou k
+        posilneniu spolupráce a vzájomného porozumenia. V roku 2025 plánujeme s
+        témou polarizácie a praktickými workshopmi so zaujímavými hosťami
+        pokračovať.
+      </p>
+
+    </div>
+
+      <h2 class="text-3xl mt-8 self-start">Relevatné odkazy</h2>
+    {/* Links section - Placed according to the example structure */}
+    <div class="md:mx-2 self-start"> {/* Adjusted width constraints */}
+      <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+        <li>
+          {/* Placeholder for Initiative's page - replace href if URL is known */}
+          <a
+            href="https://www.banskabystrica.sk/samosprava/otvorena-samosprava-ogp-local/" /* Assuming this is the relevant page */
+            target="_blank"
+            rel="noopener noreferrer"
+            class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+          >
+            Iniciatíva pre otvorené vládnutie BB (OGP Local)
+          </a>
+        </li>
+        <li>
+          {/* Placeholder for URBACT program */}
+          <a
+            href="https://urbact.eu/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+          >
+            Program URBACT IV
+          </a>
+        </lig>
+        {/* Add other relevant links here if available */}
+      </ul>
+    </div>
+
+    <h2 class="text-3xl mt-8 self-start">Galéria</h2>
+    <div class="self-stretch">
+        <Gallery source="https://storage.googleapis.com/dialogue-center/polarization_workshops"    count={6}/>
+    </div>
+  </section>
+</Layout>

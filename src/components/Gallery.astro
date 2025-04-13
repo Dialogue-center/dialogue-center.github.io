@@ -1,16 +1,18 @@
+---
+const {source , count} = Astro.props;
+let source_files = [];
+
+for (let counter = 1; counter < count+1; counter++){
+    source_files.push(`${source}/${counter}.jpg`)
+}
+console.log(source_files)
+console.log("sodkfoaksdf")
+---
 
 <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-    
-        <img class="h-[200px] max-w-[200px] object-cover rounded-lg hover:scale-200 transition duration-150 ease-in-out" src="https://storage.googleapis.com/dialogue-center/fotky%20agenti_%20/2023/Medzin%C3%A1rodn%C3%A9%20stretnutia/Genk-Breda/PXL_20231115_152950258.jpg" />
-    
-        <img class="h-[200px] max-w-[200px] object-cover rounded-lg hover:scale-200 transition duration-150 ease-in-out" src="https://storage.googleapis.com/dialogue-center/fotky%20agenti_%20/2023/Stretnutia%20Rady%20Spolupracovne/24.10.%20Robotn%C3%ADcky%20dom/341389161_954026169126388_1858818986890710198_n%20%281%29.jpg" />
-    
-        <img class="h-[200px] max-w-[200px] object-cover rounded-lg hover:scale-200 transition duration-150 ease-in-out" src="https://storage.googleapis.com/dialogue-center/fotky%20agenti_%20/2023/Stretnutia%20Rady%20Spolupracovne/7.12.%20Stretnutie%20_U%20Franc%C3%BAza_/P1021637.JPG" />
-    
-        <img class="h-[200px] max-w-[200px] object-cover rounded-lg hover:scale-200 transition duration-150 ease-in-out" src="https://storage.googleapis.com/dialogue-center/fotky%20agenti_%20/2023/Stretnutia%20Rady%20Spolupracovne/Kick%20off%20meeting_Rada%20Spolupracovne%20/IMG_3685%20Small.jpeg" />
-    
-        <img class="h-[200px] max-w-[200px] object-cover rounded-lg hover:scale-200 transition duration-150 ease-in-out" src="https://storage.googleapis.com/dialogue-center/fotky%20agenti_%20/2023/Stretnutia%20Rady%20Spolupracovne/Kick%20off%20meeting_Rada%20Spolupracovne%20/IMG_3785%20Small.jpeg" />
-       
-        <img class="h-[200px] max-w-[200px] object-cover rounded-lg hover:scale-200 transition duration-150 ease-in-out" src="https://storage.googleapis.com/dialogue-center/fotky%20agenti_%20/2024/Stretnutia%20Rady%20Spolupracovne/11.4.%20/IMG_1086.jpeg" />
-    
+    {source_files.map(
+    (source_file) => (
+    <img class="h-[200px] max-w-[200px] object-cover rounded-lg hover:scale-200 transition duration-150 ease-in-out" src={source_file} />
+    )
+    )}
 </div>

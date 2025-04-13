@@ -1,52 +1,87 @@
 ---
-import { changeLanguage } from "i18next";
 import Gallery from "@/components/Gallery.astro";
 import Layout from "../../layouts/Layout.astro";
 import "../../styles/global.css";
 
-changeLanguage("sk");
 ---
 
 <Layout title="Dialogue center">
-  <section class="flex flex-col items-center gap-4 mb-8">
-    <div class="w-fit flex flex-col gap-5 md:max-w-1/2 md:mx-2">
-      <h2 class="text-3xl mt-8">Agenti koexistencie</h2>
-      <p class="">
-        V spolupráci s mestom <a
-          href="https://www.banskabystrica.sk/samosprava/otvorena-samosprava-ogp-local/agenti-koexistencie/"
-          class="text-blue-600">Banská Bystrica</a
-        > sa organizácia Dialogue Centre, n.o. zapojila do siete akčného plánovania
-        “Agents of Co-Existence” (Agenti koexistencie, alebo aj ambasádori dobrých
-        vzťahov), ktorú vedie mesto Genk (Belgicko). Táto sieť je spoluprácou medzi
-        9 európskymi mestami, ktorá je zameraná na podporu inovatívnych prístupov
-        k spoločenským výzvam a inkluzívnu tvorbu miestnych politík s aktívnym zapojením
-        obyvateľov. Naša organizácia má postavenie neziskového partnera mesta, ktorého
-        hlavnou úlohou bude pracovať s miestnou lokálnou skupinovu obyvateľov Banskej
-        Bystrice. Táto "urban local group" alebo miestna lokálna skupina, bude spolutvoriť
-        Akčný plán Agentov Koexistencie. Okrem Banskej Bystrice a mesta Genk, ako
-        lead partner, sú do siete zapojené mestá Aarhus (Dánsko), Breda (Holandsko),
-        Quart de Poblet (Španielsko), Gdansk (Poľsko), Budaörs (Maďarsko), Kekava
-        (Lotyšsko) a územné združenie Iasi Metropolitan (Rumunsko). Sieť je súčasťou
-        programu URBACT IV, ktorý sa zameriava na trvalo udržateľný európsky rozvoj
-        a je spolufinancovaný z Európskeho fondu regionálneho rozvoja (ERDF). Sieť
-        sa zameriava na hľadanie spôsobov, ako posilniť zručnosti a kompetencie zamestnancov
-        verejnej správy a vytvárať nové organizačné štruktúry a nastoľovať novú kultúru
-        v organizáciách verejnej správy pre podporu participatívneho riadenia, resp.
-        spravovania vecí verejných a tým aj podpory demokratického systému. Zdieľaním
-        vedomostí a skúseností sa mestá budú od seba navzájom učiť a spoločne dospievať
-        k novým poznatkom. Každé mesto vypracuje miestny integrovaný akčný plán v
-        spolupráci s miestnymi zainteresovanými aktérmi. Mesto Banská Bystrica bude
-        tento akčný plán tvoriť aj s prepojením na tvorbu 2. akčného plánu otvoreného
-        vládnutia so zameraním na akčné kroky v oblasti inovácií vo vnútri mestského
-        úradu, budovania kapacít zamestnancov, resp. odborníkov mestského úradu a
-        depolarizačných stratégií, metód a zručností. Projekt odštartoval URBACT
-        univerzitou vo Švédskom Malmo v auguste 2023. Tu sa odohralo aj prvé stretnutie
-        siete Agentov Koexistencie a zástupcov z jednotlivých partnerských miest.
-      </p>
-      <h2 class="text-3xl mt-8 ">Relevatné odkazy</h2>
-    </div>
+  <section class="flex flex-col items-center gap-4 mb-8 md:max-w-1/2 md:mx-auto">
+      <div class="max-w-prose flex flex-col gap-5 mx-4 md:mx-auto text-gray-700">
+        <!-- Using max-w-prose for better text readability -->
+        <h2 class="text-3xl mt-8 font-semibold text-gray-800">
+          Agenti koexistencie
+        </h2>
 
-    <div class="min-w-1/2">
+        <p>
+          V spolupráci s mestom
+          <a
+            href="https://www.banskabystrica.sk/samosprava/otvorena-samosprava-ogp-local/agenti-koexistencie/"
+            class="text-blue-600 hover:underline"
+            >Banská Bystrica</a
+          >
+          sa organizácia Dialogue Centre, n.o. zapojila do siete akčného plánovania
+          <span class="font-semibold">“Agents of Co-Existence”</span> (Agenti
+          koexistencie, alebo aj ambasádori dobrých vzťahov), ktorú vedie mesto Genk
+          (Belgicko).
+        </p>
+        <p>
+          Táto sieť je spoluprácou medzi 9 európskymi mestami, ktorá je zameraná na
+          podporu inovatívnych prístupov k spoločenským výzvam a inkluzívnu tvorbu
+          miestnych politík s aktívnym zapojením obyvateľov. Naša organizácia má
+          postavenie neziskového partnera mesta, ktorého hlavnou úlohou bude pracovať
+          s miestnou lokálnou skupinovu obyvateľov Banskej Bystrice. Táto "urban
+          local group" alebo miestna lokálna skupina, bude spolutvoriť Akčný plán
+          Agentov Koexistencie.
+        </p>
+
+        <div>
+          <!-- Wrap list in a div so parent gap-5 applies correctly -->
+          <p class="mb-2">
+            Okrem Banskej Bystrice a mesta Genk, ako lead partner, sú do siete
+            zapojené mestá:
+          </p>
+          <ul class="list-disc list-outside pl-5 space-y-1">
+            <li>Aarhus (Dánsko)</li>
+            <li>Breda (Holandsko)</li>
+            <li>Quart de Poblet (Španielsko)</li>
+            <li>Gdansk (Poľsko)</li>
+            <li>Budaörs (Maďarsko)</li>
+            <li>Kekava (Lotyšsko)</li>
+            <li>územné združenie Iasi Metropolitan (Rumunsko)</li>
+          </ul>
+        </div>
+
+        <p>
+          Sieť je súčasťou programu <span class="font-semibold">URBACT IV</span>,
+          ktorý sa zameriava na trvalo udržateľný európsky rozvoj a je
+          spolufinancovaný z Európskeho fondu regionálneho rozvoja (ERDF). Sieť sa
+          zameriava na hľadanie spôsobov, ako posilniť zručnosti a kompetencie
+          zamestnancov verejnej správy a vytvárať nové organizačné štruktúry a
+          nastoľovať novú kultúru v organizáciách verejnej správy pre podporu
+          participatívneho riadenia, resp. spravovania vecí verejných a tým aj
+          podpory demokratického systému.
+        </p>
+        <p>
+          Zdieľaním vedomostí a skúseností sa mestá budú od seba navzájom učiť a
+          spoločne dospievať k novým poznatkom. Každé mesto vypracuje miestny
+          integrovaný akčný plán v spolupráci s miestnymi zainteresovanými aktérmi.
+        </p>
+        <p>
+          Mesto Banská Bystrica bude tento akčný plán tvoriť aj s prepojením na
+          tvorbu 2. akčného plánu otvoreného vládnutia so zameraním na akčné kroky v
+          oblasti inovácií vo vnútri mestského úradu, budovania kapacít zamestnancov,
+          resp. odborníkov mestského úradu a depolarizačných stratégií, metód a
+          zručností.
+        </p>
+        <p>
+          Projekt odštartoval URBACT univerzitou vo Švédskom Malmo v auguste 2023. Tu
+          sa odohralo aj prvé stretnutie siete Agentov Koexistencie a zástupcov z
+          jednotlivých partnerských miest.
+        </p>
+      </div>
+    <div class="self-start">
+      <h2 class="text-3xl mt-8 ">Relevatné odkazy</h2>
       <h2 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white"></h2>
       <ul
         class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400"
@@ -67,10 +102,10 @@ changeLanguage("sk");
         </li>
       </ul>
     </div>
-    
-    <div class="flex flex-col gap-2">
-      <h2 class="text-3xl mt-8 ">Galéria</h2>
-      <Gallery/>
+
+        <h2 class="text-3xl mt-8 self-start">Galéria</h2>
+    <div class="self-stretch">
+        <Gallery source="https://storage.googleapis.com/dialogue-center/fotky%20agenti_%20/gallery-chosen"    count={9}/>
     </div>
   </section>
 </Layout>
