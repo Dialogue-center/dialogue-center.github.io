@@ -5,14 +5,14 @@ let source_files = [];
 for (let counter = 1; counter < count+1; counter++){
     source_files.push(`${source}/${counter}.jpg`)
 }
-console.log(source_files)
-console.log("sodkfoaksdf")
 ---
 
 <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
     {source_files.map(
     (source_file) => (
-    <img class="h-[200px] max-w-[200px] object-cover rounded-lg hover:scale-200 transition duration-150 ease-in-out" src={source_file} />
+    <a href={source_file}>
+        <img class="h-[200px] max-w-[200px] object-cover rounded-lg hover:scale-200 transition duration-150 ease-in-out" src={source_file} />
+    </a>
     )
     )}
 </div>

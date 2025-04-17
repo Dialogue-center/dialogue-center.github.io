@@ -178,6 +178,17 @@ const currentPath = pathname.slice(1);
         >
           Náš tím
         </a>
+        <a
+          href="/about_us"
+          class:list={[
+            "block px-3 py-2 rounded-md text-base font-medium",
+            currentPath === "about_us"
+              ? "bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400"
+              : "text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-blue-600 dark:hover:text-blue-400"
+          ]}
+        >
+          O nás
+        </a>
 
         <a
           href="/contact_us"
@@ -190,6 +201,7 @@ const currentPath = pathname.slice(1);
         >
           Kontakt
         </a>
+
 
         <!-- Mobile contact button -->
         <div class="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
