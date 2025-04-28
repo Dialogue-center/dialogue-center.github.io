@@ -4,6 +4,14 @@ import tailwindcss from "@tailwindcss/vite";
 import react from '@astrojs/react';
 
 export default defineConfig({
+  markdown: {
+    shikiConfig: {
+      // Theme options
+      theme: 'github-dark',
+    },
+    remarkPlugins: [],
+    rehypePlugins: [],
+  },
   vite: {
     plugins: [tailwindcss()],
   },

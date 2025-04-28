@@ -19,16 +19,7 @@ const project_route = "/projects/" + project_link
         <h2>{publish_date}</h2>
     </div>
     
-    <p id="event_content_slot" > 
+    <p class="markdown-content" > 
       <slot />
     </p>
 </section>
-
-
-<style is:global>
-    #event_content_slot{
-        font-size: 2rem;
-        background-color: aqua;
-    }
-
-</style>
