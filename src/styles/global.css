@@ -25,28 +25,3 @@
   --color-blue-950: oklch(12.000% 0.0524 265.940);
 }
 
-
-/* Markdown styling */
-ul, ol {
-  list-style-position: outside;
-  padding-left: 1.5em;
-  margin: 1em 0;
-}
-
-ul {
-  list-style-type: disc;
-}
-
-li {
-  margin: 0.5em 0;
-  display: list-item;
-}
-
-strong, b {
-  font-weight: bold;
-}
-
-em, i {
-  font-style: italic;
-}
-
