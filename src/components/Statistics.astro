@@ -1,14 +1,15 @@
 ---
 const stats = [
-  { number: "70+", label: "participatívnych stretnutí" }, // Cocreation meetings (participatívne stretnutia)
   { number: "1.", label: "nezisková organizácia zapojená do OGP Local" },
+{ number: "10+", label: "workshopov" }, // Cocreation meetings (participatívne stretnutia)
+{ number: "70+", label: "participatívnych stretnutí" }, // Cocreation meetings (participatívne stretnutia)
   { number: "1000+", label: "účastníkov" }
 ];
 ---
 
 <section class="py-16 md:py-20 w-full bg-gradient-to-r from-blue-800 to-blue-700 dark:from-blue-900 dark:to-blue-800 shadow-inner">
-  <div class="max-w-6xl mx-auto px-4">
-    <div class="flex flex-col gap-12 md:flex-row md:justify-around text-center">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex flex-col gap-5 md:gap-0 md:flex-row md:justify-between text-center">
       {stats.map((stat) => (
         <div class="flex flex-col items-center px-4 group">
           <span class="text-7xl md:text-8xl font-bold text-white dark:text-white opacity-90 transition-all duration-300 group-hover:opacity-100 group-hover:scale-105">{stat.number}</span>
