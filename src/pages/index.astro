@@ -26,13 +26,39 @@ await init({
     sk: { translation: skTranslation }
   }
 });
+const events = await Astro.glob("../content/events/**/*.md");
+
+// TODO: maybe extract into utils functions file
+const parseDate = (dateStr: string): Date => {
+  const [day, month, year] = dateStr.split(".").map(Number);
+  // Month is 0-indexed in JavaScript's Date object
+  return new Date(year, month - 1, day);
+};
+
+const futureEvents = events
+  .filter((event: any) => {
+    // Compare with today's date at midnight
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    return parseDate(event.frontmatter.publish_date) >= today;
+  })
+  .sort((a, b) => {
+    // Sort ascending (oldest future event first)
+    return (
+      parseDate(a.frontmatter.publish_date).getTime() -
+      parseDate(b.frontmatter.publish_date).getTime()
+    );
+  });
+
+ const atLeastOneFutureEventPlanned: boolean = futureEvents.length > 0;
+ const noFutureEventPlanned: boolean = !atLeastOneFutureEventPlanned;
 ---
 
 
 
 <Layout title="Dialogue Centre">
-
 <Hero />
+{atLeastOneFutureEventPlanned && <Events/>}
 <Devider/>
 <AboutUs
 title={t("about_us.title")}
@@ -41,6 +67,6 @@ text = {t("about_us.text")}
 <Statistics/>
 <Carousel/>
 <Devider/>
-<Events/>
+{noFutureEventPlanned && <Events/>}
 <slot />
 </Layout>
