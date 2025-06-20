@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
 import i18next, { t, init } from "i18next";
 
-import ProjectInformation from "../content/project-information.json"
+import {email, phoneNumber} from "../content/ProjectInformation.json"
 
 import skTranslation from "../locales/sk/translation.json";
 import enTranslation from "../locales/en/translation.json";
@@ -33,11 +33,11 @@ await init({
                     href="mailto:dialoguecentre13@gmail.com"
                     class="text-blue-600 hover:underline"
                   >
-                    {ProjectInformation.email}
+                    {email}
                   </a>
                   <br />
                   <a href="tel:+421908358915" class="text-blue-600 hover:underline">
-                    {ProjectInformation.phoneNumber}
+                    {phoneNumber}
                   </a>
                 </div>
         <p class="text-lg font-semibold">Dialogue Centre, n. o.</p>
