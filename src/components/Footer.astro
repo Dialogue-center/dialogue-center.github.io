@@ -1,5 +1,7 @@
 ---
 import LogoPanel from "./LogoPanel.astro";
+
+import ProjectInformation from "../content/project-information.json"
 ---
 
 <footer class="w-full mt-auto">
@@ -19,7 +21,7 @@ import LogoPanel from "./LogoPanel.astro";
 
           <!-- Email -->
           <a
-            href="mailto:dialoguecentre13@gmail.com"
+            href=`mailto:${ProjectInformation.email}`
             class="flex items-center group hover:translate-x-1 transition-transform duration-300"
           >
             <div class="bg-white/10 p-2 rounded-lg mr-4 group-hover:bg-emerald-500/20 transition-colors">
@@ -29,7 +31,7 @@ import LogoPanel from "./LogoPanel.astro";
             </div>
             <div>
               <p class="text-gray-300 text-sm">Napíšte nám na</p>
-              <p class="text-white font-medium">dialoguecentre13@gmail.com</p>
+              <p class="text-white font-medium">{ProjectInformation.email}</p>
             </div>
           </a>
 
