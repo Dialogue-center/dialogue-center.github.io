@@ -5,34 +5,34 @@ import Layout from "../layouts/Layout.astro";
 
 import "../styles/global.css";
 
-import { t } from "i18next";
+import {team} from "@/locales/sk/translation.json"
 
-const { name, photo, responsibilities, email } = Astro.props;
+
 ---
 <Layout title="Dialogue center">
   <section class="team flex flex-col gap-15 mt-5 mb-5">
     <TeamMemberCard
       name="Michaela Kováčik Huľuková"
       photo="https://storage.googleapis.com/dialogue-center/team-members/MichaelaHulukova.jpg"
-      responsibilities={t("team.responsibilities_miska")}
+      responsibilities={team.responsibilities_miska}
       email="michaela.hulukova@gmail.com"
     />
     <TeamMemberCard
     name="Michaela Beran Sladkayová"
     photo="https://storage.googleapis.com/dialogue-center/team-members/Sladkayov%C3%A1.jpeg"
-    responsibilities={t("team.responsibilities_miska2")}
+    responsibilities={team.responsibilities_miska2}
     email="michaela.sladkayova@gmail.com"
     />
     <TeamMemberCard
       name="Tomáš Hudák"
       photo="https://storage.googleapis.com/dialogue-center/team-members/TomasHudak.jpeg"
-      responsibilities={t("team.responsibilities_tomas")}
+      responsibilities={team.responsibilities_tomas}
       email="hudak.tomas@icloud.com"   
     />
     <TeamMemberCard
       name="Gabriel Karika, st."
-      photo="https://cdn.razuna.eu/file/remote?i=67afb89d9e30880d01809637&f=t&dl=t&type=thumbnail&c=a7a7e1a89bb4bb319227ddfe4ce9b668&token=98f0ae25ebadeb9bac31047d1c41dc7fb7236adcbcaefac87f84846de91139af"
-      responsibilities={t("team.responsibilities_gabriel")}
+      photo="https://storage.googleapis.com/dialogue-center/team-members/gabrielKarika.jpeg"
+      responsibilities={team.responsibilities_gabriel}
       email="gkarika0@gmail.com"
     />
   </section>
