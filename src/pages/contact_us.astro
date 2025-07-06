@@ -1,23 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
-import { t, init } from "i18next";
+import { t} from "i18next";
 
 import {email, phoneNumber} from "../content/ProjectInformation.json"
 
-// ✅ Import JSON translations directly
-import enTranslation from "../locales/en/translation.json";
-import skTranslation from "../locales/sk/translation.json";
-
-// ✅ Initialize i18next with direct imports
-await init({
-  lng: "sk", // Default to English
-  debug: true,
-  resources: {
-    en: { translation: enTranslation },
-    sk: { translation: skTranslation }
-  }
-});
 ---
 
 <Layout title="Dialogue Center">
