@@ -1,6 +1,18 @@
 ---
-const pathname = new URL(Astro.request.url).pathname;
+const pathname = Astro.url.pathname;
 const currentPath = pathname.slice(1);
+Astro.url.origin
+
+const paths = {
+  timeline: 'event_timeline',
+  projects: 'projects',
+  team: 'team',
+  about: 'about_us',
+  contact: 'contact_us'
+}
+
+const highlighted_section = "text-blue-700 dark:text-blue-400 border-b-2 border-blue-500"
+const regular_section = "text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-blue-600 dark:hover:text-blue-400"
 ---
 
 <header class="w-full sticky top-0 z-30">
@@ -26,67 +38,67 @@ const currentPath = pathname.slice(1);
               class:list={[
                 "px-3 py-2 text-sm font-medium transition-colors duration-200",
                 currentPath === ""
-                  ? "text-blue-700 dark:text-blue-400 border-b-2 border-blue-500"
-                  : "text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+                  ? highlighted_section
+                  : regular_section
               ]}
             >
               Domov
             </a>
 
             <a
-              href="/event_timeline"
+              href={paths.timeline}
               class:list={[
                 "px-3 py-2 text-sm font-medium transition-colors duration-200",
-                currentPath === "event_timeline"
-                  ? "text-blue-700 dark:text-blue-400 border-b-2 border-blue-500"
-                  : "text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+                currentPath.includes(paths.timeline)
+                  ? highlighted_section
+                  : regular_section
               ]}
             >
               Udalosti
             </a>
 
             <a
-              href="/projects"
+              href={paths.projects}
               class:list={[
                 "px-3 py-2 text-sm font-medium transition-colors duration-200",
-                currentPath === "projects"
-                  ? "text-blue-700 dark:text-blue-400 border-b-2 border-blue-500"
-                  : "text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+                currentPath.includes(paths.projects)
+                  ? highlighted_section
+                  : regular_section
               ]}
             >
               Projekty
             </a>
 
             <a
-              href="/team"
+              href={paths.team}
               class:list={[
                 "px-3 py-2 text-sm font-medium transition-colors duration-200",
-                currentPath === "team"
-                  ? "text-blue-700 dark:text-blue-400 border-b-2 border-blue-500"
-                  : "text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+                currentPath.includes(paths.team)
+                  ? highlighted_section
+                  : regular_section
               ]}
             >
               Náš tím
             </a>
             <a
-              href="/about_us"
+              href={paths.about}
               class:list={[
                 "px-3 py-2 text-sm font-medium transition-colors duration-200",
-                currentPath === "about_us"
-                  ? "text-blue-700 dark:text-blue-400 border-b-2 border-blue-500"
-                  : "text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+                currentPath.includes(paths.about)
+                  ? highlighted_section
+                  : regular_section
               ]}
             >
               O nás
             </a>
 
             <a
-              href="/contact_us"
+              href={paths.contact}
               class:list={[
                 "px-3 py-2 text-sm font-medium transition-colors duration-200",
-                currentPath === "contact_us"
-                  ? "text-blue-700 dark:text-blue-400 border-b-2 border-blue-500"
-                  : "text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+                currentPath.includes(paths.contact)
+                  ? highlighted_section
+                  : regular_section
               ]}
             >
               Kontakt
