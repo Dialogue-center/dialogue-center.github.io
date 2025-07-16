@@ -11,21 +11,6 @@ import Statistics from '@/components/Statistics.astro';
 import Carousel from '@/components/Carousel.astro';	
 
 
-import i18next, { t, init } from "i18next";
-
-// ✅ Import JSON translations directly
-import enTranslation from "../locales/en/translation.json";
-import skTranslation from "../locales/sk/translation.json";
-
-// ✅ Initialize i18next with direct imports
-await init({
-  lng: "sk", // Default to English
-  debug: true,
-  resources: {
-    en: { translation: enTranslation },
-    sk: { translation: skTranslation }
-  }
-});
 const events = await Astro.glob("../content/events/**/*.md");
 
 // TODO: maybe extract into utils functions file
@@ -61,8 +46,8 @@ const futureEvents = events
 {atLeastOneFutureEventPlanned && <Events/>}
 <Devider/>
 <AboutUs
-title={t("about_us.title")}
-text = {t("about_us.text")}
+title="O nás"
+text = {"Dialogue Centre je nezisková organizácia. Našou víziou je prispieť k rozvoju kultúry dialógu medzi ľuďmi naprieč občianskou spoločnosťou, komunitami a verejnou sférou. Prostredníctvom facilitácie kolektívnej inteligencie, budovania kapacít v participatívnom líderstve a depolarizácii podporujeme spoluprácu, hľadanie múdrych riešení pre výzvy dneška a kvalitné medziľudské vzťahy."}
 />
 <Statistics/>
 <Carousel/>

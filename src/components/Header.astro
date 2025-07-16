@@ -49,7 +49,7 @@ const regular_section = "text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:
               href={paths.timeline}
               class:list={[
                 "px-3 py-2 text-sm font-medium transition-colors duration-200",
-                currentPath.includes(paths.timeline)
+                currentPath === paths.timeline
                   ? highlighted_section
                   : regular_section
               ]}
@@ -61,7 +61,7 @@ const regular_section = "text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:
               href={paths.projects}
               class:list={[
                 "px-3 py-2 text-sm font-medium transition-colors duration-200",
-                currentPath.includes(paths.projects)
+                currentPath === paths.projects
                   ? highlighted_section
                   : regular_section
               ]}
@@ -73,7 +73,7 @@ const regular_section = "text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:
               href={paths.team}
               class:list={[
                 "px-3 py-2 text-sm font-medium transition-colors duration-200",
-                currentPath.includes(paths.team)
+                currentPath === paths.team
                   ? highlighted_section
                   : regular_section
               ]}
@@ -84,7 +84,7 @@ const regular_section = "text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:
               href={paths.about}
               class:list={[
                 "px-3 py-2 text-sm font-medium transition-colors duration-200",
-                currentPath.includes(paths.about)
+                currentPath === paths.about
                   ? highlighted_section
                   : regular_section
               ]}
@@ -96,7 +96,7 @@ const regular_section = "text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:
               href={paths.contact}
               class:list={[
                 "px-3 py-2 text-sm font-medium transition-colors duration-200",
-                currentPath.includes(paths.contact)
+                currentPath === paths.contact
                   ? highlighted_section
                   : regular_section
               ]}

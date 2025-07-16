@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
-import { t} from "i18next";
 
 import {email, phoneNumber} from "../content/ProjectInformation.json"
 
@@ -9,8 +8,8 @@ import {email, phoneNumber} from "../content/ProjectInformation.json"
 
 <Layout title="Dialogue Center">
   <section class="max-w-5xl mx-auto px-6 py-12 text-center md:text-left">
-    <h1 class="text-4xl font-bold mb-4">{t("contact.heading1")}</h1>
-    <p class="text-xl text-gray-600 mb-8">{t("contact.heading2")}</p>
+    <h1 class="text-4xl font-bold mb-4">{"Neváhajte sa nám ozvať"}</h1>
+    <p class="text-xl text-gray-600 mb-8">{"Sme tu pre vás"}</p>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
       <!-- Contact Info -->
