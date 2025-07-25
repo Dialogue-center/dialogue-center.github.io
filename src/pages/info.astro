@@ -1,0 +1,83 @@
+---
+import Link from "@/components/Link.astro";
+import Layout from "../layouts/Layout.astro";
+import "../styles/global.css";
+---
+
+<Layout title="Info | Dialogue Centre">
+  <section class="flex flex-col items-center gap-4 mb-12 mx-4">
+    <div class="w-fit flex flex-col gap-6 md:max-w-1/2 md:mx-2">
+
+      <h2 class="font-bold text-4xl mt-8 text-gray-800 dark:text-white">
+        Info
+      </h2>
+
+      <h3 class="font-semibold text-2xl mt-6 border-l-4 border-blue-500 pl-4 text-gray-800 dark:text-gray-200">
+        Slovník pojmov
+      </h3>
+      <ul class="list-disc list-inside space-y-2 pl-4 text-gray-700 dark:text-gray-300">
+        <li><strong>Hosting</strong> – prenajatý priestor na počítači, kde bývajú naše e-maily.</li>
+        <li><strong>Webstránka</strong> – samotné stránky, ktoré vidíte; u nás bývajú na <Link href="https://pages.github.com/" text="GitHub Pages"/> zadarmo.</li>
+        <li><strong>Doména</strong> – adresa (napr. dialoguecentre.sk), ktorá smeruje na našu webstránku.</li>
+        <li><strong>Cloud</strong> – veľký úložný priestor na internete pre fotky a videá; my využívame Google Cloud.</li>
+      </ul>
+
+      <h2 class="font-semibold text-2xl mt-6 border-l-4 border-blue-200 pl-4 text-gray-800 dark:text-gray-200">
+        Ako to spolu súvisí?
+      </h2>
+      <p class="text-gray-400 dark:text-gray-300 leading-relaxed">
+        Doménu dialoguecentre.sk sme si „zaregistrovali“ cez <Link href="https://www.webhouse.sk/sk/uvod/" text="WebHouse"/> – to je ako keby sme si kúpili adresu.
+        Na túto adresu sme nasmerovali webstránku, ktorá fyzicky býva na
+        <Link href="https://pages.github.com/" text="GitHub Pages"/> (úplne zadarmo).
+        E-maily potrebujú vlastný priestor, preto máme malý hosting u WebHouse (0,5 GB, stačí na poštu).
+        Fotky a videá by sa tam už nezmestili, preto ich ukladáme do <Link href="https://cloud.google.com/?hl=en" text="Google Cloud-u"/>, kde máme priestoru koľko len chceme ale platíme len za toľko koľko využijeme, v našom prípade je to zatiaľ iba pár centov.
+      </p>
+
+      <h3 class="font-semibold text-2xl mt-6 border-l-4 border-emerald-500 pl-4 text-gray-800 dark:text-gray-200">
+        Hostingy
+      </h3>
+      <ul class="list-disc list-inside space-y-2 pl-4 text-gray-700 dark:text-gray-300">
+        <li>
+          <strong>WebHouse</strong> – e-mail hosting 0,5 GB priestoru.
+          <ul class="list-disc list-inside ml-4 mt-1 text-sm">
+            <li>
+                <Link href="https://setup.sk/hosting-email" text="Nastavenia e-mailových schránok"/> - tu sa dajú meniť, rušiť a vytvárať emailové schránky, napr. <i>michaela.hulukova@dialoguecentre.eu</i>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>Google Cloud</strong> – neobmedzený úložný priestor pre fotky a videá, platíme len za využité miesto.
+        </li>
+      </ul>
+
+      <h3 class="font-semibold text-2xl mt-6 border-l-4 border-emerald-500 pl-4 text-gray-800 dark:text-gray-200">
+        Doména
+      </h3>
+      <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+        Doménu dialoguecentre.sk máme registrovanú cez <Link href="https://www.webhouse.sk/sk/uvod/" text="WebHouse"/>. Je to samostatná služba – ak by sme zrušili hosting, doména zostáva naša a naopak.
+      </p>
+
+      <h3 class="font-semibold text-2xl mt-6 border-l-4 border-emerald-500 pl-4 text-gray-800 dark:text-gray-200">
+        Webstránka
+      </h3>
+      <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+        Hostovaná na <Link href="https://pages.github.com/" text="GitHub Pages"/> – pre nás podstatné že bezplatne.
+      </p>
+
+      <h3 class="font-semibold text-2xl mt-6 border-l-4 border-blue-500 pl-4 text-gray-800 dark:text-gray-200">
+        Výpočet nákladov
+      </h3>
+      <ul class="list-disc list-inside space-y-2 pl-4 text-gray-700 dark:text-gray-300">
+        <li>WebHouse doména: 10 € / rok ≈ 0,83 € / mesiac</li>
+        <li>WebHouse e-mail hosting: 1,1 € / mesiac</li>
+        <li>Google Cloud: &lt; 1 € / mesiac</li>
+        <li>Webstránka (GitHub Pages): zadarmo</li>
+      </ul>
+
+      <p class="mt-6 text-2xl font-bold text-gray-800 dark:text-white">
+        CELKOVÁ CENA ZA MESIAC: ~2,93 €
+      </p>
+
+    </div>
+  </section>
+</Layout>
