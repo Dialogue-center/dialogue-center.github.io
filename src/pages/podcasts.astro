@@ -1,0 +1,20 @@
+---
+import Layout from "../layouts/Layout.astro";
+import "../styles/global.css";
+---
+
+<Layout title="Podcasts | Dialogue Centre">
+  <section class="flex flex-col items-center gap-4 mb-12 mx-4">
+    <div class="w-fit flex flex-col gap-6 md:max-w-1/2 md:mx-2">
+      <h2 class="font-bold text-4xl mt-8 text-gray-800 dark:text-white">
+        Podcasty
+      </h2>
+
+      <!-- Player -->
+      <div class="w-full max-w-md">
+          <audio controls class="w-full" src="https://storage.googleapis.com/dialogue-center/audio/podcast/sample-12s.mp3">
+        </audio>
+      </div>
+    </div>
+  </section>
+</Layout>

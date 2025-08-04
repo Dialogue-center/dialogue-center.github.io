@@ -1,5 +1,5 @@
 @import "tailwindcss";
-
+@plugin "daisyui";
 
 
 
@@ -8,7 +8,7 @@
 @custom-variant dark (&:is(.dark *));
 
 
-* { 
+* {
   border: 1px dashed bonewhite;
 }
 @theme {
@@ -24,4 +24,3 @@
   --color-blue-900: oklch(19.000% 0.0831 265.940);
   --color-blue-950: oklch(12.000% 0.0524 265.940);
 }
-
