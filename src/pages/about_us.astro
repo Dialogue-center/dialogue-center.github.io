@@ -1,61 +1,100 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
+
 ---
 
-<Layout title="Info | Dialogue Centre">
-  <section class="flex flex-col items-center gap-4 mb-12 mx-4">
-    <div class="w-fit flex flex-col gap-6 md:max-w-1/2 md:mx-2">
+<Layout title="O nás | Dialogue Centre">
+  <section class="flex flex-col items-center gap-4 mb-12 mx-4"> 
+    <div class="w-fit flex flex-col gap-6 md:max-w-1/2 md:mx-2"> 
 
       <h2 class="font-bold text-4xl mt-8 text-gray-800 dark:text-white">
-        Info
+        Rozvíjame kultúru dialógu
       </h2>
 
-      <h3 class="font-semibold text-2xl mt-6 border-l-4 border-blue-500 pl-4 text-gray-800 dark:text-gray-200">
-        Slovník pojmov
-      </h3>
-      <ul class="list-disc list-inside space-y-2 pl-4 text-gray-700 dark:text-gray-300">
-        <li><strong>Hosting</strong> – prenajatý priestor na počítači, kde bývajú vaše e-maily.</li>
-        <li><strong>Webstránka</strong> – samotné stránky, ktoré vidíte; u nás bývajú na GitHub Pages zadarmo.</li>
-        <li><strong>Doména</strong> – adresa (napr. dialoguecentre.sk), ktorá smeruje na vašu webstránku.</li>
-        <li><strong>Cloud</strong> – veľký úložný priestor na internete pre fotky a videá; my využívame Google Cloud.</li>
-      </ul>
-
-      <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
-        Ako to spolu súvisí? Doménu dialoguecentre.sk sme si „zaregistrovali“ cez WebHouse – to je ako keby sme si kúpili adresu. Na túto adresu sme nasmerovali webstránku, ktorá fyzicky býva na GitHub Pages (úplne zadarmo). E-maily potrebujú vlastný priestor, preto máme malý hosting u WebHouse (0,5 GB, stačí na poštu). Fotky a videá by sa tam už nezmestili, preto ich ukladáme do Google Cloud-u, kde máme neobmedzený priestor za pár centov mesačne.
+      <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed"> 
+        Vitajte v Dialogue Centre. Našou vášňou a poslaním je <strong class="text-blue-700 dark:text-blue-400 font-semibold">rozvoj kultúry dialógu a spolupráce</strong>. Veríme, že kvalitný dialóg je kľúčom k lepším medziľudským vzťahom, efektívnejšej komunikácii a hlbšiemu porozumeniu v komunitách aj organizáciách. V dnešných komplexných časoch podporujeme ľudskosť a schopnosť spoločne vytvárať <strong class="text-emerald-700 dark:text-emerald-400 font-semibold">múdre, inovatívne a udržateľné riešenia</strong>, čím prispievame k odolnosti celej spoločnosti.
       </p>
+
+      <h3 class="font-semibold text-2xl mt-6 border-l-4 border-blue-500 pl-4 text-gray-800 dark:text-gray-200">
+        Náš prístup a metodológia
+      </h3>
+      <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+        Zameriavame sa na dizajn, organizáciu a facilitáciu <strong class="text-blue-700 dark:text-blue-400 font-semibold">participatívnych procesov</strong>, ktoré maximalizujú potenciál <strong class="text-blue-700 dark:text-blue-400 font-semibold">kolektívnej inteligencie</strong> a podporujú inovácie. Naša práca často zahŕňa prácu so skupinami a využíva konverzačné a učiace sa metódy. Rozlišujeme kľúčové fázy týchto procesov a aplikujeme na ne vhodné facilitačné prístupy:
+      </p>
+      <ul class="list-disc list-inside space-y-3 mt-2 pl-4 text-gray-700 dark:text-gray-300"> 
+        <li>
+          <strong>Budovanie dôvery a vzťahov:</strong> Vytvárame bezpečné prostredie pre vzájomné porozumenie, ktoré je základom každej úspešnej spolupráce a dialógu.
+        </li>
+        <li>
+          <strong>Divergentná fáza:</strong> Podporujeme kreativitu a otvorenú výmenu názorov. Využívame dôkladnú analýzu aktérov a inovatívne participatívne metódy (napr. brainstorming) na stimuláciu bohatej diskusie a generovanie nápadov.
+        </li>
+        <li>
+          <strong>Konvergentná fáza:</strong> Pomáhame účastníkom nájsť spoločnú reč, stanoviť priority a dospieť ku konsenzuálnym rozhodnutiam pri formulovaní konkrétnych stratégií, programov alebo politík.
+        </li>
+      </ul>
+       <p class="mt-2 text-gray-700 dark:text-gray-300 leading-relaxed">
+         Okrem toho rozvíjame a aplikujeme prístupy ako <strong class="font-semibold">Komunity praxe</strong> a <strong class="font-semibold">Manažment (kultúrnej) zmeny</strong> (bližšie informácie k týmto metódam pripravujeme).
+       </p>
 
       <h3 class="font-semibold text-2xl mt-6 border-l-4 border-emerald-500 pl-4 text-gray-800 dark:text-gray-200">
-        Hostingy
+        Naše hodnoty - Náš kompas
       </h3>
       <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
-        WebHouse – e-mail hosting 0,5 GB priestoru, zálohy každých 6 hodín.
+        V našej práci sa riadime a kultivujeme nasledovné hodnoty:
       </p>
-
-      <h3 class="font-semibold text-2xl mt-6 border-l-4 border-blue-500 pl-4 text-gray-800 dark:text-gray-200">
-        Emaily
-      </h3>
-      <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
-        WebHouse e-mail hosting s dvojfaktorovou ochranou.
-      </p>
-
-      <h3 class="font-semibold text-2xl mt-6 border-l-4 border-emerald-500 pl-4 text-gray-800 dark:text-gray-200">
-        Webstránka
-      </h3>
-      <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
-        Hostovaná na GitHub Pages – rýchla, bezplatná a s automatickými aktualizáciami.
-      </p>
-
-      <h3 class="font-semibold text-2xl mt-6 border-l-4 border-blue-500 pl-4 text-gray-800 dark:text-gray-200">
-        Výpočet nákladov
-      </h3>
-      <ul class="list-disc list-inside space-y-2 pl-4 text-gray-700 dark:text-gray-300">
-        <li>Google Cloud: &lt; 1 € / mesiac</li>
-        <li>WebHouse e-mail hosting: 2 € / mesiac</li>
-        <li>Webstránka: zadarmo</li>
-        <li>WebHouse doména: 10 € / rok</li>
+      <ul class="grid grid-cols-2 gap-x-4 gap-y-1 mt-2 pl-4 text-gray-700 dark:text-gray-300">
+        <li class="flex items-center"><svg class="w-3 h-3 mr-2 text-blue-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Dôvera</li>
+        <li class="flex items-center"><svg class="w-3 h-3 mr-2 text-emerald-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Spolupatričnosť</li>
+        <li class="flex items-center"><svg class="w-3 h-3 mr-2 text-blue-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Súdržnosť</li>
+        <li class="flex items-center"><svg class="w-3 h-3 mr-2 text-emerald-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Orientácia na spoločenské hodnoty</li>
+        <li class="flex items-center"><svg class="w-3 h-3 mr-2 text-blue-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Udržateľný rozvoj</li>
+        <li class="flex items-center"><svg class="w-3 h-3 mr-2 text-emerald-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Osobný rozvoj</li>
+        <li class="flex items-center"><svg class="w-3 h-3 mr-2 text-blue-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Odvaha</li>
+        <li class="flex items-center"><svg class="w-3 h-3 mr-2 text-emerald-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Humanizmus</li>
       </ul>
 
+      <h3 class="font-semibold text-2xl mt-6 border-l-4 border-blue-500 pl-4 text-gray-800 dark:text-gray-200">
+        Naše služby
+      </h3>
+      <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+        Poskytujeme riešenia na mieru v dvoch hlavných oblastiach, pričom sa zameriavame najmä na verejný a občiansky sektor, no naše služby sú plne aplikovateľné aj v komerčnej sfére:
+      </p>
+      <ol class="list-decimal list-inside space-y-3 mt-2 pl-4 text-gray-700 dark:text-gray-300"> 
+        <li>
+          <strong>Vzdelávanie a budovanie kapacít:</strong> Ponúkame na mieru šité tréningy a workshopy zamerané na rozvoj zručností, nástrojov a postojov potrebných pre efektívny dialóg, spoluprácu a tzv. <strong class="text-blue-700 dark:text-blue-400 font-semibold">participatívne líderstvo</strong>, či už v online alebo offline prostredí.
+        </li>
+        <li>
+          <strong>Dizajn a facilitácia platforiem:</strong> Navrhujeme, organizujeme a facilitujeme priestory a procesy pre dialóg, spoluprácu a vzájomné učenie sa. Prepájame rozmanitých aktérov z rôznych prostredí, kultúr a hierarchických úrovní.
+        </li>
+         <li>
+          <strong>Manažment (kultúrnej) zmeny:</strong> Podporujeme organizácie a komunity pri navigácii a implementácii zmien. (Viac informácií čoskoro).
+        </li>
+      </ol>
+
+       <h3 class="font-semibold text-2xl mt-6 border-l-4 border-emerald-500 pl-4 text-gray-800 dark:text-gray-200">
+         Pre koho sme tu
+       </h3>
+       <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+         Naše služby sú určené pre široké spektrum klientov vrátane komunít, občianskych lídrov, neziskových organizácií, firiem a ich manažérov, verejných inštitúcií, politických lídrov a všetkých, ktorí majú záujem o rozvoj dialógu a spolupráce.
+       </p>
+
+       <h3 class="font-semibold text-2xl mt-6 border-l-4 border-blue-500 pl-4 text-gray-800 dark:text-gray-200">
+         Náš príbeh v skratke
+       </h3>
+        <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+          Dialogue Centre n. o. bolo založené v roku 2018 a aktívne pôsobí od roku 2019. Sídlime v srdci Slovenska, v Banskej Bystrici, no naša pôsobnosť presahuje hranice a realizujeme aj medzinárodné projekty. Inšpiráciou pri našom vzniku bola naša partnerská organizácia UK CEE DIALOGUE CENTRE v Londýne.
+        </p>
+
+      <h3 class="font-semibold text-2xl mt-6 border-l-4 border-emerald-500 pl-4 text-gray-800 dark:text-gray-200">
+        Kontaktujte nás
+      </h3>
+      <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+        Máte záujem o vzdelávací projekt, facilitáciu dialógu alebo podporu spolupráce vo vašej komunite či organizácii? Radi pre vás pripravíme riešenie na mieru.
+      </p>
+      <p class="text-gray-700 dark:text-gray-300">
+        Napíšte nám: <a href="mailto:dialog@dialoguecentre.eu" class="font-medium text-blue-600 dark:text-blue-500 hover:underline hover:text-blue-800 dark:hover:text-blue-300 transition duration-150 ease-in-out">dialog@dialoguecentre.eu</a>
+      </p>
     </div>
   </section>
 </Layout>
