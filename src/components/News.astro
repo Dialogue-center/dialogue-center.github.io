@@ -1,0 +1,45 @@
+---
+import Link from "@/components/Link.astro";
+---
+
+    <section class="flex flex-col items-center gap-6 mb-12 shadow-md mt-5 p-5 w-fit mx-auto rounded-2xl">
+    <div class="w-full max-w-2xl flex flex-col gap-6">
+
+    <h2
+      class="text-3xl font-semibold text-gray-700 dark:text-white md:text-4xl"
+    >
+        Novinky
+      <div
+        class="mt-2 h-1 w-20 rounded-full bg-gradient-to-r from-blue-500 to-emerald-500"
+      >
+      </div>
+    </h2>
+
+      <article class="bg-white dark:bg-gray-800 rounded-xl shadow-sm overflow-hidden">
+        <div class="flex items-center gap-4 p-4">
+          <img
+            class="w-20 h-20 rounded-lg object-cover shrink-0"
+            src="https://media.discordapp.net/attachments/1223934726843273308/1402179780689920090/image.png?ex=6892f92e&is=6891a7ae&hm=3302c78781e53b2ddbfe8d813fe22cde5012c930e55cf4d4f88fa2b0d2207695&=&format=webp&quality=lossless&width=692&height=673"
+            alt="Obálka podcastu"
+          />
+          <div class="flex-1">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+              Nový podcast: Agenti Koexistencie – Epizóda 1
+            </h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300 mt-1">
+                Rozhovor s holandským filozofom Bartom Brandsmom o tom ako porozumieť polarizácii
+            </p>
+            <Link
+              href="/podcasts"
+              text="Prehrať →"
+            >
+            </Link>
+          </div>
+        </div>
+        <div class="px-4 pb-3 text-xs text-gray-500 dark:text-gray-400">
+          5. augusta 2025
+        </div>
+      </article>
+
+    </div>
+  </section>

@@ -9,6 +9,7 @@ import AboutUs from '../components/AboutUs.astro';
 import Events from '@/components/Events.astro';
 import Statistics from '@/components/Statistics.astro';
 import Carousel from '@/components/Carousel.astro';	
+import News from '@/components/News.astro';
 
 
 const events = await Astro.glob("../content/events/**/*.md");
@@ -43,6 +44,7 @@ const futureEvents = events
 
 <Layout title="Dialogue Centre">
 <Hero />
+<News />
 {atLeastOneFutureEventPlanned && <Events/>}
 <Devider/>
 <AboutUs
