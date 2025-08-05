@@ -1,19 +1,71 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Link from "@/components/Link.astro";
 import "../styles/global.css";
+
+const podcasts = [
+  {
+    title: "Ako porozumieť polarizácii",
+    description:
+      `V rámci projektu Agenti koexistencie vám prinášame rozhovor s holandským filozofom Bartom Brandsmom, ktorý sa zameriava na analýzu a prácu s myslením v štýle "my vs. oni". V 40-minútovej debate s našou korešpondentkou Sonou Karikovou sme diskutovali o tom, ako osloviť ľudí "v strede" a ako efektívne čeliť polarizácii a radikalizácii v spoločnosti.`,
+    audioUrl:
+      "https://storage.googleapis.com/dialogue-center/audio/podcast/Polarisation_30.7_dialogueCentre.mp3",
+    imageUrl:
+      "https://media.discordapp.net/attachments/1223934726843273308/1402179780689920090/image.png?ex=6892f92e&is=6891a7ae&hm=3302c78781e53b2ddbfe8d813fe22cde5012c930e55cf4d4f88fa2b0d2207695&=&format=webp&quality=lossless&width=692&height=673",
+    topicSlug: "/projects/polarization_workshops",
+  },
+];
 ---
 
 <Layout title="Podcasts | Dialogue Centre">
-  <section class="flex flex-col items-center gap-4 mb-12 mx-4">
-    <div class="w-fit flex flex-col gap-6 md:max-w-1/2 md:mx-2">
-      <h2 class="font-bold text-4xl mt-8 text-gray-800 dark:text-white">
+  <section class="flex flex-col items-center gap-8 my-12 mx-4">
+    <div class="w-full max-w-3xl flex flex-col gap-8">
+
+      <!-- Page heading -->
+      <h2
+        class="font-bold text-4xl text-center bg-gradient-to-r from-[#102756] via-[#1f5cab] to-[#2878de] bg-clip-text text-transparent"
+      >
         Podcasty
       </h2>
+      <!-- Podcast list -->
+      <div class="space-y-10">
+        {podcasts.map((p) => (
+          <article class="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden">
+            <div class="md:flex">
+              <!-- Cover image -->
+              <div class="md:shrink-0">
+                <img
+                  class="h-48 w-full object-cover md:h-full md:w-48"
+                  src={p.imageUrl}
+                  alt={`Obálka podcastu ${p.title}`}
+                />
+              </div>
 
-      <!-- Player -->
-      <div class="w-full max-w-md">
-          <audio controls class="w-full" src="https://storage.googleapis.com/dialogue-center/audio/podcast/sample-12s.mp3">
-        </audio>
+              <div class="p-6 flex flex-col justify-between">
+                <div>
+                  <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                    {p.title}
+                  </h3>
+                  <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">
+                    {p.description}
+                  </p>
+                  <p class="mt-2 text-sm">
+                    <Link
+                      href={p.topicSlug}
+                      text="Viac o téme →"
+                    />
+                  </p>
+                </div>
+
+                <!-- Audio player -->
+                <audio controls class="w-full mt-4">
+                  <source src={p.audioUrl} type="audio/mpeg" />
+                  Váš prehliadač nepodporuje prehrávanie zvuku.
+                </audio>
+              </div>
+            </div>
+          </article>
+        ))}
       </div>
     </div>
   </section>
