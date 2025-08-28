@@ -4,17 +4,18 @@
         "heading2":"Sme tu pre vás"
     }
     ,
-    "team": 
+    "team":
       {
         "responsibilities_miska": "Pochádza z Banskej Bystrice, no titul magister práv získala na Univerzite Komenského v Bratislave. Po ukončení Magisterského štúdia absolvovala 9-mesačnú stáž v Českej Ženskej Lobby v Prahe, kde pôsobila ako asistentka projektovej manažérky projektu Hájíme práva žen v ČR, ktorá započala jej prácu v neziskovom sektore. V Dialogue centre pôsobí ako riaditeľka od roku 2022.",
         "responsibilities_miska2": "Michaela Beran Sladkayová pochádza z Nitrianskych Sučian, no počas vysokoškolského štúdia sa usadila v Banskej Bystrici. Od mlada sa zapájala do komunitného života, čo ju priviedlo k štúdiu andragogiky na Pedagogickej fakulte UMB, kde absolvovala všetky tri stupne štúdia. Počas školy sa venovala dobrovoľníctvu a pôsobila v Univerzitnom pastoračnom centre.",
         "responsibilities_gabriel": "Vyštudoval filozofiu na Filozofickej fakulte UK v Bratislave, no čoskoro sa preorientoval na prácu programátora a analytika. Po roku 1989 založil softvérovú firmu, ktorú viedol približne 25 rokov až do odchodu do dôchodku. Projekty firmy formoval jeho záujem o výskum a spoločenské vedy. Dnes sa venuje rodine, ski-alpinizmu, literatúre, filozofii a tai-chi.",
-        "responsibilities_tomas": "Koordinátor podujatí, workshopov a rezidencií. Vytvára a realizuje programy, ktoré reflektujú a napĺňajú poslanie centra. Dbá na to, aby každé podujatie – od diskusií a prednášok až po workshopy – bolo v súlade s hodnotami organizácie. Do ich prípravy a realizácie aktívne zapája miestne komunity a zameriava sa najmä na spoločenské a ľudskoprávne témy."
+        "responsibilities_tomas": "Koordinátor podujatí, workshopov a rezidencií. Vytvára a realizuje programy, ktoré reflektujú a napĺňajú poslanie centra. Dbá na to, aby každé podujatie – od diskusií a prednášok až po workshopy – bolo v súlade s hodnotami organizácie. Do ich prípravy a realizácie aktívne zapája miestne komunity a zameriava sa najmä na spoločenské a ľudskoprávne témy.",
+        "responsibilities_lucka": "Pochádza z Košíc, no svoje technologické vzdelanie získala najprv v Brne a až neskôr aj v Košiciach. Najprv vyštudovala bioinformatiku na Masarykovej univerzite, neskôr pokračovala magisterským štúdiom umelej inteligencie a strojového učenia na Technickej univerzite v Košiciach kde získala titul Ing. V našom tíme zastrešuje obsah a sociálne siete, no zároveň je našou technickou oporou. Neustále vylepšuje náš web, pridáva nové funkcie a promptne rieši všetky technické výzvy."
 
       },
     "about_us": {
         "title":"O nás",
         "text":"Dialogue Centre je nezisková organizácia. Našou víziou je prispieť k rozvoju kultúry dialógu medzi ľuďmi naprieč občianskou spoločnosťou, komunitami a verejnou sférou. Prostredníctvom facilitácie kolektívnej inteligencie, budovania kapacít v participatívnom líderstve a depolarizácii podporujeme spoluprácu, hľadanie múdrych riešení pre výzvy dneška a kvalitné medziľudské vzťahy."
     }
-    
+
 }
