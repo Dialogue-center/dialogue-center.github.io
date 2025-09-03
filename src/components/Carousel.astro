@@ -6,7 +6,8 @@
         <!-- Carousel Wrapper -->
         <div class="relative h-80 md:h-96 lg:h-[28rem] flex items-center justify-center overflow-hidden rounded-xl shadow-lg">
 
-            <!-- Slide 1 (Active) -->
+        
+             <!-- Slide 1 (Active) -->
             <div class="absolute inset-0 flex flex-col md:flex-row items-center bg-white dark:bg-gray-800 rounded-xl h-full w-full opacity-100 transition-all duration-700 ease-in-out shadow-md" data-carousel-item="active">
                 <!-- Image (Left Side on Desktop, Top on Mobile) -->
                 <div class="w-full md:w-1/2 h-1/2 md:h-full relative">
@@ -19,7 +20,7 @@
                     <p class="mt-3 md:mt-4 text-sm md:text-base text-gray-200 dark:text-blue-100">
                         Zrealizovali sme workshopy v Banskej Bystrici s cieľom znížiť polarizáciu a podporiť konštruktívny dialóg.Workshopy vnímame ako viac než len vzdelávacie podujatia – sú cestou k posilneniu spolupráce a vzájomnému porozumeniu.
                     </p>
-                    <a href="projects/polarization_workshops" class="mt-4 md:mt-6 inline-flex items-center text-gray-200 dark:text-white hover:underline group">
+                    <a href="/projects/polarization_workshops" class="mt-4 md:mt-6 inline-flex items-center text-gray-200 dark:text-white hover:underline group">
                         Zistite viac
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -48,6 +49,8 @@
                     </a>
                 </div>
             </div>
+
+        
 
             <!-- Slide 3 -->
             <div class="absolute inset-0 hidden flex flex-col md:flex-row items-center bg-white dark:bg-gray-800 rounded-xl h-full w-full opacity-0 transition-all duration-700 ease-in-out shadow-md" data-carousel-item>
@@ -171,7 +174,7 @@
         let autoAdvanceInterval = setInterval(() => {
             currentIndex = (currentIndex + 1) % totalSlides;
             showSlide(currentIndex);
-        }, 6000);
+        }, 8000);
 
         // Pause auto-advance on hover (optional)
         carousel.addEventListener('mouseenter', () => clearInterval(autoAdvanceInterval));
