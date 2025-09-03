@@ -126,23 +126,31 @@
         function showSlide(index:any) {
             // Update slides
             items.forEach((item, i) => {
-                item.classList.add("hidden");
-                item.classList.remove("opacity-100");
-                item.classList.add("opacity-0");
-            });
+            const el = item as HTMLElement;
 
-            items[index].classList.remove("hidden");
-            items[index].classList.add("opacity-100");
-            items[index].classList.remove("opacity-0");
+            if (i === index) {
+            el.classList.remove("hidden");
+            el.classList.add("opacity-100");
+            el.classList.remove("opacity-0");
+            el.style.pointerEvents = "auto";          // Now allowed
+            el.setAttribute("aria-hidden", "false");
+            } else {
+            el.classList.add("hidden");
+            el.classList.remove("opacity-100");
+            el.classList.add("opacity-0");
+            el.style.pointerEvents = "none";           // Now allowed
+            el.setAttribute("aria-hidden", "true");
+            }
+        });
 
-            // Update indicators
-            indicators.forEach((indicator, i) => {
-                indicator.setAttribute("aria-current", i === index ? "true" : "false");
-                indicator.classList.toggle("bg-gray-700", i === index); // Darker indicator for active slide
-                indicator.classList.toggle("dark:bg-white", i === index);
-                indicator.classList.toggle("bg-gray-700/50", i !== index);
-                indicator.classList.toggle("dark:bg-white/50", i !== index);
-            });
+        // Update indicators as before
+        indicators.forEach((indicator, i) => {
+            indicator.setAttribute("aria-current", i === index ? "true" : "false");
+            indicator.classList.toggle("bg-gray-700", i === index);
+            indicator.classList.toggle("dark:bg-white", i === index);
+            indicator.classList.toggle("bg-gray-700/50", i !== index);
+            indicator.classList.toggle("dark:bg-white/50", i !== index);
+        });
         }
 
         // Manual Navigation Buttons
