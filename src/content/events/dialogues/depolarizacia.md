@@ -2,7 +2,6 @@
 slug: depolarizacia
 layout: ../../../layouts/EventLayout.astro
 title: (de)polarizácia
-author: Michaela
 publish_date: 26.09.2023
 description: Diskusia o úlohe politických strán pri depolarizácii spoločnosti, dezinformáciách a možnostiach, ako spoločnosť alebo jednotlivec môže čeliť manipulatívnym kampaniam.
 project: Dialógy s verejnosťou

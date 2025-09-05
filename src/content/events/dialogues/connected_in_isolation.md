@@ -2,7 +2,6 @@
 slug: connected-in-isolation
 layout: ../../../layouts/EventLayout.astro
 title: Spájanie sa online v časoch fyzickej izolácie
-author: Miroslav Šimkovič
 publish_date: 2.4.2020
 description: Virtuálny dialóg pre obyvateľov Banskej Bystrice a ich volených zástupcov, ktorý poskytol priestor na vzájomnú podporu, zdieľanie skúseností a riešenie aktuálnych výziev aj v čase obmedzených sociálnych kontaktov
 project: Dialógy s verejnosťou

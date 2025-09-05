@@ -2,7 +2,6 @@
 slug: solidarita-v-ohrozeni
 layout: ../../../layouts/EventLayout.astro
 title: Ako sa môžeme k sebe správať, aby sme si vedeli udržať solidárneho ducha v ohrození?
-author: Michaela
 publish_date: 20.03.2022
 description: Diskusia o solidarite v čase kríz, o prekonávaní rozdielov a udržiavaní súdržnosti medzi rôznymi komunitami v náročných obdobiach.
 project: Dialógy s verejnosťou

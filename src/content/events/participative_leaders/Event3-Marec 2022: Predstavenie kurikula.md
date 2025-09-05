@@ -2,7 +2,6 @@
 slug: participativne-liderky-kurikulum-samosprava-2022
 layout: ../../../layouts/EventLayout.astro
 title: Predstavenie kurikula ženám zo samosprávy
-author: Tím Participatívne líderky
 publish_date: 15.03.2022
 description: Menšie osvetové stretnutie na predstavenie tréningového kurikula ženám zo samosprávy.
 project: Participatívne líderky

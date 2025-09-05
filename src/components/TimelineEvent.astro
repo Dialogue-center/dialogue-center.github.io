@@ -12,6 +12,8 @@ const { name, date, description, type, link, project, project_link, edition } = 
   type: EventTypes; // Ensure type is explicitly an EventTypes value
 };
 
+const year = date.split('.')[2]
+
 const full_event_route = "/events/" + link;
 const project_route = "/projects/" + project_link;
 
@@ -70,7 +72,7 @@ const { bg, ring, icon } = colorMap[type] || colorMap.default;
   </a>
   <time
     class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
-    >{date}</time
+    >{year}</time
   >
   <p
     class={`"block mb-2 text-sm font-normal leading-none text-blue-400 dark:text-blue-400`}

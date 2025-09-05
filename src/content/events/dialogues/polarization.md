@@ -2,7 +2,6 @@
 slug: polarization
 layout: ../../../layouts/EventLayout.astro
 title: When, how and why we (do not) engage in democracy
-author: Ján Guliš
 publish_date: 21.11.2019
 description: A public discussion in Banská Bystrica on December 17th, exploring when, how, and why people engage (or don’t engage) in democracy, inviting diverse perspectives—including foreign citizens—to foster dialogue, civic engagement, and democratic culture, all in a festive pre-Christmas atmosphere with free hot punch
 project: Dialógy s verejnosťou

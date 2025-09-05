@@ -2,7 +2,6 @@
 slug: election_values
 layout: ../../../layouts/EventLayout.astro
 title: Kľúčové hodnoty vo voľbách 2020
-author: Miroslav Šimkovič
 publish_date: 6.2.2020
 description: Špeciálna volebná edícia dialógu v Banskej Bystrici, zameraná na diskusiu o hodnotách, ktoré môžu prispieť k riešeniu spoločenských problémov a ovplyvniť volebné rozhodovanie, s cieľom zlepšiť verejnú komunikáciu, podporiť demokratické postoje a sociálnu súdržnosť
 project: Dialógy s verejnosťou

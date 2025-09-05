@@ -2,7 +2,6 @@
 slug: revolution
 layout: ../../../layouts/EventLayout.astro
 title: (R)evolution?
-author: Ján Guliš
 publish_date: 11.11.2019
 description: A facilitated multi-generational dialogue on topic of Velvet Revolution legacy, democracy and its current development in Slovakia
 project: Dialógy s verejnosťou

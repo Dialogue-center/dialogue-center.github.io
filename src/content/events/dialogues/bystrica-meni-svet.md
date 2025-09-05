@@ -2,7 +2,6 @@
 slug: bystrica-meni-svet
 layout: ../../../layouts/EventLayout.astro
 title: Bystrica mení svet
-author: Miroslav Šimkovič
 publish_date: 10.09.2020
 description: Diskusia o zmenách vyvolaných pandémiou COVID-19 a o tom, aké témy sú pre obyvateľov Banskej Bystrice rezonujúce v súčasnosti.
 project: Dialógy s verejnosťou

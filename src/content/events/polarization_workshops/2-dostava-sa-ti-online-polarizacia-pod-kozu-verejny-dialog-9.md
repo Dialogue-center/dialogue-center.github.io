@@ -2,7 +2,6 @@
 slug: 2-dostava-sa-ti-online-polarizacia-pod-kozu-verejny-dialog-9
 layout: ../../../layouts/EventLayout.astro
 title: Dostáva sa ti (online) polarizácia pod kožu? Verejný dialóg #9
-author: Dialogue Centre n. o.
 publish_date: 16.06.2025
 description:
   Verejný dialóg o polarizácii a skupinovom myslení 'my vs oni' s holandským

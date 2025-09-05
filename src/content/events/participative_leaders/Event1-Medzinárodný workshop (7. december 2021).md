@@ -2,7 +2,6 @@
 slug: participativne-liderky-workshop-norsko-2021
 layout: ../../../layouts/EventLayout.astro
 title: Medzinárodný workshop – Ako prekonávať bariéry maskulínnej kultúry
-author: Tím Participatívne líderky
 publish_date: 07.12.2021
 description: Online workshop s expertkami z Nórska zameraný na participatívne ženské líderstvo a výmenu skúseností.
 project: Participatívne líderky

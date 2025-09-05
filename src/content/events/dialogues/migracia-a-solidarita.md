@@ -2,7 +2,6 @@
 slug: migracia-a-solidarita
 layout: ../../../layouts/EventLayout.astro
 title: Sme GRANDi voči miGRANTom?
-author: Michaela Huluková
 publish_date: 28.11.2023
 description: Diskusia o migrácii, vnímaní "cudzincov" v našej spoločnosti, solidarite a o spôsoboch, ako zmierniť polarizáciu v tejto téme.
 project: Dialógy s verejnosťou

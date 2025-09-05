@@ -2,7 +2,6 @@
 slug: participativne-liderky-workshop-slovensko-2022
 layout: ../../../layouts/EventLayout.astro
 title: Slovenský workshop – Bariéry participatívneho líderstva žien
-author: Tím Participatívne líderky
 publish_date: 10.02.2022
 description: Osvetový workshop v slovenčine zameraný na výzvy a bariéry participatívneho ženského líderstva.
 project: Participatívne líderky
