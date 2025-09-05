@@ -14,20 +14,20 @@ edition: 9
 type: Discussion
 ---
 
-Cítite, že nás (online) svet čoraz viac rozdeľuje? Máte chuť sa porozprávať o tom, ako zvládať narastajúce napätie medzi „nami a tými druhými“?
-Pozývame Vás na verejný dialóg, kde sa budeme venovať tomu, ako pracovať s polarizáciou a skupinovým myslením “my vs oni”.
-Naším hosťom bude renomovaný holandský expert na túto tému Bart Brandsma, ktorý sa dlhodobo venuje práve otázkam spoločenskej polarizácie a je autorom knihy: Polarisation: Insight into the dynamics of us-them thinking.
+<p><strong>Ako zvládať polarizáciu v každodennom živote?</strong></p>
 
-Príďte na neformálnu konverzáciu, kde bude priestor na zdieľanie pohľadov, otázky aj nové inšpirácie.
+<p>Ďakujeme, že ste s nami boli na 9. verejnom dialógu!</p>
 
-Ide v poradí už o deviaty verejný dialóg. Hlavným motívom realizácie verejných dialógov je snaha o zvyšovanie povedomia o špecifickom formáte dialógu, ktorý sa líši od tradičnej diskusie. Účastníci našich dialógov majú tak možnosť precvičovania si dialógových zručností vo verejnom priestore. Účelom dialógov je aj skvalitňovanie vzájomných vzťahov v meste, podpora demokracie a súdržnosti, ako aj participatívneho vytvárania riešení na súčasné spoločenské a mestské výzvy.
+<p>
+  Pondelok 16. júna sme mali jedinečnú príležitosť privítať renomovaného holandského experta, Barta Brandsmu, autora knihy <em>Polarisation: Insight into the dynamics of us-them thinking</em>. Spoločne sme sa ponorili do témy, ktorá je dnes aktuálnejšia než kedykoľvek predtým – ako zvládať narastajúce napätie a dynamiku myslenia „my vs. oni“.
+</p>
 
-Budeme sa na Vás tešiť "U Francúza" na Hornej 12 o 18:00.
-Dialóg bude prebiehať v angličtine s prekladom do slovenčiny.
+<p>
+  Počas neformálnej konverzácie Bart Brandsma predstavil cenné metódy, ako pracovať s polarizáciou a skupinovým myslením. Účastníci aktívne zdieľali svoje pohľady, kládli otázky a precvičovali si dialógové zručnosti v bezpečnom prostredí.
+</p>
 
-Vstup voľný ale priestor je kapacitne limitovaný!
-Prosíme, aby ste registráciou potvrdili vašu účasť. Po naplnení kapacít bude registrácia uzavretá.
-Registračný link tu:
-https://forms.gle/dx4TCziHZyVSe3Ro8
+<p>
+  Teší nás, že práve tento formát dialógu pomáha skvalitňovať vzájomné vzťahy, podporuje demokraciu a súdržnosť v našom meste. Veríme, že sa nám podarilo priblížiť, ako sa od tradičnej diskusie posunúť k hlbšiemu porozumeniu a spoločnému hľadaniu riešení na súčasné spoločenské výzvy.
+</p>
 
-Podujatie je súčasťou projektu Agenti Koexistencie v rámci programu URBACT, ktorý je spolufinancovaný Mestom Banská Bystrica.
+<p>Ďakujeme všetkým, ktorí sa dialógu zúčastnili a prispeli k vytvoreniu inšpiratívneho večera.</p>
