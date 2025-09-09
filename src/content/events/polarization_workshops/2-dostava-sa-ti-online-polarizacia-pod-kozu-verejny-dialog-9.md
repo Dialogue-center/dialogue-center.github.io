@@ -11,6 +11,8 @@ project: Workshopy o polarizácii
 project_link: polarization_workshops
 edition: 9
 type: Discussion
+gallery: https://storage.googleapis.com/dialogue-center/2-dostava-sa-ti-online-polarizacia-pod-kozu-verejny-dialog-9
+count_gallery: 6
 ---
 
 <p><strong>Ako zvládať polarizáciu v každodennom živote?</strong></p>
