@@ -1,10 +1,11 @@
 ---
+import Gallery from '@/components/Gallery.astro';
 import type { CollectionEntry } from 'astro:content';
 
 
 type Props = CollectionEntry<'events'>['data'];
 
-const { title, publish_date, description, project, project_link ,edition } = Astro.props;
+const { title, publish_date, description, project, project_link ,edition, gallery, count_gallery} = Astro.props;
 
 const year = publish_date.split('.')[2]
 
@@ -24,4 +25,10 @@ const project_route = "/projects/" + project_link
     <p class="markdown-content" > 
       <slot />
     </p>
+    
+    {gallery && <h2 class="text-3xl mt-8 self-start">Galéria</h2>}
+
+    <div class="self-stretch">
+        <Gallery source= {gallery} count={count_gallery}/>
+    </div>
 </section>

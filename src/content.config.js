@@ -10,7 +10,9 @@ const events = defineCollection({
     project: z.string(),
     project_link: z.string(),
     edition: z.number(),
-    type: z.string()
+    type: z.string(),
+    gallery: z.string().optional(),
+    count_gallery: z.number().optional()
   }),
 });
 
