@@ -3,11 +3,12 @@ slug: 1-stay-in-the-middle
 title: Platforma lídrov stredu
 publish_date: 03.12.2025
 description: Na tomto podujatí predstavíme výsledky projektu Agenti koexistencie a zároveň neformálne otvoríme novú Platformu lídrov stredu, s bohatým programom diskusií o líderstve v rozdelenej spoločnosti
-project: Dialógy s verejnosťou
+project: ""
 project_link: dialogues
 edition: 9
 type: Conference
 fb_link: https://www.facebook.com/photo.php?fbid=1284395340396392&set=a.470310145138253&type=3 
+registration_link : https://docs.google.com/forms/d/e/1FAIpQLSd8Ot2OxK26WXt56Zt0i4Xc15ybdjjoO6Mms59mo4WoOvdSGQ/viewform
 ---
 
 Milí naši priaznivci a podporovatelia,

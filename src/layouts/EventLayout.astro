@@ -15,9 +15,11 @@ const project_route = "/projects/" + project_link
 ---
 <section class="md:max-w-1/2 md:mx-auto my-5 mx-2 flex flex-col gap-2">
     <h1 class="text-5xl font-bold">{title}</h1>
+    {project && edition &&
     <a href={project_route} class="text-blue-400 text-xl font-semibold"> 
         <h4>{project} #{edition}</h4>
     </a>
+    } 
     <div class="text-gray-500">
         <h2>{year}</h2>
     </div>

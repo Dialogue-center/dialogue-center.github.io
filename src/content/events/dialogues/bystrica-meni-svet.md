@@ -4,7 +4,7 @@ layout: ../../../layouts/EventLayout.astro
 title: Bystrica mení svet
 publish_date: 10.09.2020
 description: Diskusia o zmenách vyvolaných pandémiou COVID-19 a o tom, aké témy sú pre obyvateľov Banskej Bystrice rezonujúce v súčasnosti.
-project: Dialógy s verejnosťou
+project: Verejný dialóg
 project_link: dialogues
 edition: 5
 type: Discussion

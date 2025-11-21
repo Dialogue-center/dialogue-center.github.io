@@ -1,16 +1,17 @@
 ---
 // src/components/UpcomingEvent.astro
 
-const { name, date, link, project, project_link, edition, description, fb_link} = Astro.props as {
+const { name, date, link, project, project_link, edition, description, fb_link, registration_link} = Astro.props as {
   name: string;
   date: string;
   link: string;
   edition: number;
   project: string;
-  project_link: string;
-  description: string
-  fb_link: string
-};
+  project_link: string ;
+  description: string;
+  fb_link: string;
+  registration_link : string;
+}
 
 const full_event_route = `/events/${link}`;
 
@@ -75,6 +76,12 @@ if (diffDays === 0) {
           Facebook link
       </a>
       }
+      <div></div>
+      {registration_link &&
+  <a href={registration_link} class="text-blue-400 link">
+    Registrovať sa
+  </a>
+}
 
       <!-- Countdown Text -->
       {
