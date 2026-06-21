@@ -5,16 +5,21 @@ const logos = [
   { src: "/logos/europska-komisia.png", alt: "Europska Komisia", url: "https://commission.europa.eu/index_sk" },
   { src: "/logos/oecd.png", alt: "OECD", url: "https://www.oecd.org/" },
   { src: "/logos/spolupracovna.jpg", alt: "Spolupracovna", url: "https://www.banskabystrica.sk/spolupracovna/" },
-  { src: "/logos/urbact.png", alt: "Urbact", url: "https://archive.urbact.eu/urbact-slovenska-republika" },
-  { src: "/logos/banska-bystrica.png", alt: "Mesto Banska Bystrica", url: "https://www.banskabystrica.sk/ " }
-
+  { src: "/logos/urbact.png", alt: "Urbact", url: "https://archive.urbact.eu/urbact-slovenska-hrabina" },
+  { src: "/logos/banska-bystrica.png", alt: "Mesto Banska Bystrica", url: "https://www.banskabystrica.sk/" }
 ];
 ---
 
-<div class="h-fit flex overflow-clip justify-around items-center py-4 gap-5 grayscale-25">
-  {logos.map((logo) => (
-    <a href={logo.url} target="_blank" rel="noopener noreferrer">
-      <img src={logo.src} alt={logo.alt} class="h-18 opacity-40 hover:opacity-100" />
-    </a>
-  ))}
+<div class="bg-white/8 backdrop-blur-sm border-y border-white/10">
+  <div class="flex flex-wrap justify-center items-center py-6 gap-6 md:gap-8 px-4">
+    {logos.map((logo) => (
+      <a href={logo.url} target="_blank" rel="noopener noreferrer" class="flex items-center justify-center min-w-[100px] md:min-w-[140px]">
+        <img 
+          src={logo.src} 
+          alt={logo.alt} 
+          class="h-12 md:h-16 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" 
+        />
+      </a>
+    ))}
+  </div>
 </div>
