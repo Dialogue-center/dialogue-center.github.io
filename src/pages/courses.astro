@@ -11,8 +11,16 @@ interface Course {
 // const { courses } = Astro.props as { courses: Course[] };
 const courses = [
   { title: "Ako strategicky pracovať s polarizáciou?",
-    href: "/courses/course1",
-    image: "https://storage.googleapis.com/dialogue-center/fotky%20agenti_%20/2024/Workshop%20-%20testovacia%20aktivita/462681844_1094981745547428_8236520902426863780_n.jpg"
+    href: "/courses/course1_sk",
+    image: "https://storage.googleapis.com/dialogue-center/fotky%20agenti_%20/2024/Workshop%20-%20testovacia%20aktivita/462681844_1094981745547428_8236520902426863780_n.jpg",
+    label: "Zobraziť kurz"
+  },
+    {
+    title: "How to Work Strategically with Polarisation?",
+    href: "/courses/course1_eng",
+    image:
+      "https://storage.googleapis.com/dialogue-center/fotky%20agenti_%20/2024/Workshop%20-%20testovacia%20aktivita/462681844_1094981745547428_8236520902426863780_n.jpg",
+    label: "View course"
   },
 ];
 ---
@@ -48,7 +56,7 @@ const courses = [
                   {course.title}
                 </h3>
                 <span class="inline-flex items-center gap-1.5 text-sm font-medium text-blue-200 group-hover:text-white transition-colors duration-200">
-                  Zobraziť kurz
+                    {course.label}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1"
