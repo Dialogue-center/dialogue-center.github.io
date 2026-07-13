@@ -1,7 +1,6 @@
 ---
 const pathname = Astro.url.pathname;
 const currentPath = pathname.slice(1);
-Astro.url.origin;
 
 const sections = [
   { name: "Domov", path: "/" },
@@ -16,7 +15,6 @@ const sections = [
 ---
 
 <header class="w-full sticky top-0 z-30">
-  <!-- Top gradient line -->
   <div class="h-1 bg-gradient-to-r from-emerald-500 via-blue-500 to-[#102756]">
   </div>
 
@@ -25,9 +23,7 @@ const sections = [
   >
     <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between h-16">
-        <!-- Logo and primary navigation -->
         <div class="flex">
-          <!-- Logo -->
           <div class="flex-shrink-0 flex items-center">
             <a href="/" class="flex items-center">
               <img
@@ -38,7 +34,6 @@ const sections = [
             </a>
           </div>
 
-          <!-- Desktop Navigation -->
           <div class="hidden md:ml-8 md:flex md:items-center md:space-x-4">
             {
               sections.map((section) => (
@@ -46,7 +41,7 @@ const sections = [
                   href={section.path}
                   class:list={[
                     "px-3 py-2 text-sm font-medium transition-colors duration-200",
-                    currentPath === section.path
+                    currentPath === section.path.slice(1)
                       ? "text-blue-700 dark:text-blue-400 border-b-2 border-blue-500"
                       : "text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-blue-600 dark:hover:text-blue-400",
                   ]}
@@ -58,9 +53,7 @@ const sections = [
           </div>
         </div>
 
-        <!-- Contact button and mobile menu button -->
         <div class="flex items-center">
-          <!-- Contact button -->
           <div class="hidden md:flex items-center">
             <a
               href="/contact_us"
@@ -84,14 +77,13 @@ const sections = [
             </a>
           </div>
 
-          <!-- Mobile menu button -->
           <div class="flex md:hidden">
             <button
               type="button"
+              id="mobile-menu-button"
               class="inline-flex items-center justify-center p-2 rounded-md text-gray-500 hover:text-blue-600 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-blue-400 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500 transition-colors duration-200"
               aria-controls="navbar-mobile"
               aria-expanded="false"
-              data-collapse-toggle="navbar-mobile"
             >
               <span class="sr-only">Otvoriť hlavné menu</span>
               <svg
@@ -114,84 +106,27 @@ const sections = [
       </div>
     </div>
 
-    <!-- Mobile menu, show/hide based on menu state -->
     <div
       class="hidden md:hidden bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700"
       id="navbar-mobile"
     >
       <div class="px-2 pt-2 pb-3 space-y-1">
-        <a
-          href="/"
-          class:list={[
-            "block px-3 py-2 rounded-md text-base font-medium",
-            currentPath === ""
-              ? "bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400"
-              : "text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-blue-600 dark:hover:text-blue-400",
-          ]}
-        >
-          Domov
-        </a>
+        {
+          sections.map((section) => (
+            <a
+              href={section.path}
+              class:list={[
+                "block px-3 py-2 rounded-md text-base font-medium",
+                currentPath === section.path.slice(1)
+                  ? "bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400"
+                  : "text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-blue-600 dark:hover:text-blue-400",
+              ]}
+            >
+              {section.name}
+            </a>
+          ))
+        }
 
-        <a
-          href="/event_timeline"
-          class:list={[
-            "block px-3 py-2 rounded-md text-base font-medium",
-            currentPath === "event_timeline"
-              ? "bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400"
-              : "text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-blue-600 dark:hover:text-blue-400",
-          ]}
-        >
-          Udalosti
-        </a>
-
-        <a
-          href="/projects"
-          class:list={[
-            "block px-3 py-2 rounded-md text-base font-medium",
-            currentPath === "projects"
-              ? "bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400"
-              : "text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-blue-600 dark:hover:text-blue-400",
-          ]}
-        >
-          Projekty
-        </a>
-
-        <a
-          href="/team"
-          class:list={[
-            "block px-3 py-2 rounded-md text-base font-medium",
-            currentPath === "team"
-              ? "bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400"
-              : "text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-blue-600 dark:hover:text-blue-400",
-          ]}
-        >
-          Náš tím
-        </a>
-        <a
-          href="/about_us"
-          class:list={[
-            "block px-3 py-2 rounded-md text-base font-medium",
-            currentPath === "about_us"
-              ? "bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400"
-              : "text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-blue-600 dark:hover:text-blue-400",
-          ]}
-        >
-          O nás
-        </a>
-
-        <a
-          href="/contact_us"
-          class:list={[
-            "block px-3 py-2 rounded-md text-base font-medium",
-            currentPath === "contact_us"
-              ? "bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400"
-              : "text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-blue-600 dark:hover:text-blue-400",
-          ]}
-        >
-          Kontakt
-        </a>
-
-        <!-- Mobile contact button -->
         <div class="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
           <a
             href="/contact_us"
@@ -218,3 +153,16 @@ const sections = [
     </div>
   </nav>
 </header>
+
+<script is:inline>
+  const button = document.getElementById("mobile-menu-button");
+  const menu = document.getElementById("navbar-mobile");
+
+  if (button && menu) {
+    button.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+      const expanded = button.getAttribute("aria-expanded") === "true";
+      button.setAttribute("aria-expanded", String(!expanded));
+    });
+  }
+</script>
